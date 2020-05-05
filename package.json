@@ -2,8 +2,5 @@
   "author": "imalbert <albert.s.manuel@gmail.com>",
   "license": "MIT",
   "private": true,
-  "workspaces": ["packages/*"],
-  "scripts": {
-    "develop": "yarn workspace www develop"
-  }
+  "workspaces": ["packages/*"]
 }
