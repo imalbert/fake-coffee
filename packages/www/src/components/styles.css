@@ -2,5 +2,7 @@
 
 @import "tailwindcss/components";
 
+@import "./button.css";
+
 @import "tailwindcss/utilities";
 
