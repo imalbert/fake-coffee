@@ -1,6 +1,8 @@
 module.exports = {
+  purge: [
+    './src/**/*.js',
+  ],
   theme: {
-    extend: {},
     screens: {
       'sm': '768px',
       'lg': '1024px',
