@@ -25,15 +25,15 @@ const Layout = ({ children }) => {
 
   return (
     <div className="h-screen flex flex-col bg-white">
-      <Header siteTitle={data.site.siteMetadata.title} />
+      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <main className="flex-grow flex flex-col">
         {children}
       </main>
-      <footer className="container mx-auto flex-none">
+      {/* <footer className="container mx-auto flex-none">
         © {new Date().getFullYear()}, Built with
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+      </footer> */}
     </div>
   )
 }

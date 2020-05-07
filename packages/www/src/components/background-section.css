@@ -1,0 +1,6 @@
+.background-section, .background-section::before {
+  @apply bg-repeat bg-center bg-auto !important;
+}
+.background-section::before {
+  @apply opacity-100 !important;
+}
