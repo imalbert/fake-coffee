@@ -24,7 +24,9 @@ const BackgroundSection = ({ children, className }) => (
           className={`background-section ${className}`}
           fluid={imageData}
         >
-          {children}
+          <div className="h-full p-12 bg-primary-light bg-opacity-25">
+            {children}
+          </div>
         </BackgroundImage>
       )
     }}

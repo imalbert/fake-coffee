@@ -13,11 +13,12 @@ library.add(faMugHot)
 const IndexPage = () => (
   <Layout>
     <BackgroundSection className="flex-grow">
-      <div className="container mx-auto h-full p-12 bg-primary-light bg-opacity-25">
+      <div className="container mx-auto">
         <SEO title="Home" />
-        <h1 className="font-serif text-5xl font-black tracking-tighter">
-          Fake Coffee <FontAwesomeIcon icon='mug-hot' className="text-5xl" />
+        <h1 className="font-serif text-5xl font-black tracking-tighter inline-block">
+          Fake Coffee
         </h1>
+        <FontAwesomeIcon icon='mug-hot' size="2x" className="w-auto h-8 inline-block" />
         <h1 className="font-serif text-5xl italic leading-3">Imagine</h1>
         <p className="mt-10 mb-6">
           Kick off your day with one of our best, made-up coffees.<br/>

@@ -1,5 +1,7 @@
 @import "tailwindcss/base";
 
+svg { vertical-align: -0.125em; }
+
 @import "tailwindcss/components";
 
 @import "./button.css";
