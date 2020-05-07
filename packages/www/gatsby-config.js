@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Fake Coffee`,
     description: `Kick off your day with one of our best, made-up coffees. Instant delivery for free!`,
-    author: `@gatsbyjs`,
+    author: `@imalbert`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
