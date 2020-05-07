@@ -1,17 +1,20 @@
 import React from "react"
 import { Link } from "gatsby"
+import { library } from "@fortawesome/fontawesome-svg-core"
 import { faMugHot } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+library.add(faMugHot)
+
 const IndexPage = () => (
   <Layout>
     <div className="container mx-auto">
       <SEO title="Home" />
       <h1 className="font-serif text-5xl font-black tracking-tighter">
-        Fake Coffee <FontAwesomeIcon icon={faMugHot} />
+        Fake Coffee <FontAwesomeIcon icon='mug-hot' className="text-5xl" />
       </h1>
       <h1 className="font-serif text-5xl italic leading-3">Imagine</h1>
       <p className="mt-10 mb-6">
