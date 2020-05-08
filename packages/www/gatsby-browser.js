@@ -6,6 +6,28 @@
 import "./src/components/styles.css"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
-import { faMugHot, faStar } from "@fortawesome/free-solid-svg-icons"
+import {
+  faChevronDown,
+  faCoffee,
+  faHamburger,
+  faHammer,
+  faMugHot,
+  faPortrait,
+  faShoppingCart,
+  faSignInAlt,
+  faStar,
+  faTimes,
+} from "@fortawesome/free-solid-svg-icons"
 
-library.add(faMugHot, faStar)
+library.add(
+  faChevronDown,
+  faCoffee,
+  faHamburger,
+  faHammer,
+  faMugHot,
+  faPortrait,
+  faShoppingCart,
+  faSignInAlt,
+  faStar,
+  faTimes
+)

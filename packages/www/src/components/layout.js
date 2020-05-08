@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
 
   return (
     <div className='h-screen flex flex-col bg-white'>
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+      <Header siteTitle={data.site.siteMetadata.title} />
       <main className='flex-grow flex flex-col'>
         {children}
       </main>
