@@ -87,31 +87,35 @@ const IndexPage = () => (
     </Section>
 
     <Section>
-      <h1 className="font-serif text-3xl font-black tracking-tighter text-center mb-12">
-        Why Choose Fake Coffee?
-      </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-1 lg:gap-2">
-        <Card>
-          <h2>Variety</h2>
-          <p>
-            13 rotating coffees, 8+ origins, 5 grind sizes - and all 100%
-            speciality grade.
+      <div className="container mx-auto">
+        <h1 className="text-3xl font-bold tracking-tighter">
+          Why Choose Fake Coffee?
+        </h1>
+      </div>
+      <div className="container mx-auto grid grid-cols-1 gap-12 sm:gap-6 sm:grid-cols-3 tracking-tighter">
+        <div className="flex text-center items-center justify-center flex-col h-64 space-x-1 space-y-2">
+          <h2 className="font-bold text-xl tracking-tighter">
+            The limit is your imagination
+          </h2>
+          <p className="font-sans text-lg">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa.
           </p>
-        </Card>
-        <Card>
-          <h2>Quality</h2>
-          <p>
-            Grown by experts, roasted by experts - and all freshly ground for
-            your order.
+        </div>
+        <div className="flex text-center items-center justify-center flex-col h-64 space-x-1 space-y-2">
+          <h2 className="font-bold text-xl tracking-tighter">It's Fake</h2>
+          <p className="font-sans text-lg">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa.
           </p>
-        </Card>
-        <Card>
-          <h2>Ethics</h2>
-          <p>
-            Every farmer gets 25-125% OVER Fairtrade rates, plus training and
-            investment.
+        </div>
+        <div className="flex text-center items-center justify-center flex-col h-64 space-x-1 space-y-2">
+          <h2 className="font-bold text-xl tracking-tighter">But It's Free</h2>
+          <p className="font-sans text-lg">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa.
           </p>
-        </Card>
+        </div>
       </div>
     </Section>
 
@@ -163,80 +167,90 @@ const IndexPage = () => (
     </Section>
 
     <Section>
-      <h1 className="font-serif text-3xl font-black tracking-tighter text-center mb-12">
-        Our Coffee is Just... Free!
-      </h1>
-      <p>And our customers know it. Just check out what they’ve been saying…</p>
-
-      <div className="flex">
-        <h3>Excellent</h3>
-        <span className="flex-grow">
-          <FontAwesomeIcon icon="star" size="xs" />
-          <FontAwesomeIcon icon="star" size="xs" />
-          <FontAwesomeIcon icon="star" size="xs" />
-          <FontAwesomeIcon icon="star" size="xs" />
-          <FontAwesomeIcon icon="star" size="xs" />
-        </span>
-        <p>5 Average</p>
-        <p>1 Review</p>
+      <div className="container mx-auto">
+        <h1 className="text-3xl font-bold tracking-tighter">
+          Our Coffee is Just... Free!
+        </h1>
       </div>
-      <div>
-        Albert M
-        <span>
-          <FontAwesomeIcon icon="star" size="xs" />
-          <FontAwesomeIcon icon="star" size="xs" />
-          <FontAwesomeIcon icon="star" size="xs" />
-          <FontAwesomeIcon icon="star" size="xs" />
-          <FontAwesomeIcon icon="star" size="xs" />
-        </span>
-        <p>It's free!</p>
-        <p>May 2020</p>
-      </div>
-    </Section>
+      <div className="container mx-auto space-y-4">
+        <h2 className="text-xl tracking-tighter">
+          And our customers know it. Just check out what they’ve been saying…
+        </h2>
 
-    <Section>
-      <h1 className="font-serif text-3xl font-black tracking-tighter text-center mb-12">
-        Best Sellers
-      </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-1 lg:gap-2">
-        <Card>
-          <h2>Planalto</h2>
-          <p>$0</p>
-          <button className="btn btn-primary">Shop Now</button>
-        </Card>
-        <Card>
-          <h2>Fruit and Nut Espresso</h2>
-          <p>$0</p>
-          <button className="btn btn-primary">Shop Now</button>
-        </Card>
-        <Card>
-          <h2 className="bg">Bourbon Cream Espresso</h2>
-          <p>$0</p>
-          <button className="btn btn-primary">Shop Now</button>
-        </Card>
+        <div className="flex">
+          <h3>Excellent</h3>
+          <span className="flex-grow">
+            <FontAwesomeIcon icon="star" size="xs" />
+            <FontAwesomeIcon icon="star" size="xs" />
+            <FontAwesomeIcon icon="star" size="xs" />
+            <FontAwesomeIcon icon="star" size="xs" />
+            <FontAwesomeIcon icon="star" size="xs" />
+          </span>
+          <p>5 Average</p>
+          <p>1 Review</p>
+        </div>
+        <div>
+          Albert M
+          <span>
+            <FontAwesomeIcon icon="star" size="xs" />
+            <FontAwesomeIcon icon="star" size="xs" />
+            <FontAwesomeIcon icon="star" size="xs" />
+            <FontAwesomeIcon icon="star" size="xs" />
+            <FontAwesomeIcon icon="star" size="xs" />
+          </span>
+          <p>It's free!</p>
+          <p>May 2020</p>
+        </div>
       </div>
     </Section>
 
     <Section>
-      <h1 className="font-serif text-3xl font-black tracking-tighter text-center mb-12">
-        Get The Kit
-      </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-1 lg:gap-2">
-        <Card>
-          <h2>Discovery Starter Pack</h2>
-          <p>$0</p>
-          <button className="btn btn-primary">Shop Now</button>
-        </Card>
-        <Card>
-          <h2>Aeropress</h2>
-          <p>$0</p>
-          <button className="btn btn-primary">Shop Now</button>
-        </Card>
-        <Card>
-          <h2>Wilfa Grinder</h2>
-          <p>$0</p>
-          <button className="btn btn-primary">Shop Now</button>
-        </Card>
+      <div className="container mx-auto">
+        <h1 className="text-3xl font-bold tracking-tighter">Best Sellers</h1>
+      </div>
+      <div className="container mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-1 lg:gap-2">
+          <Card>
+            <h2>Planalto</h2>
+            <p>$0</p>
+            <button className="btn btn-primary">Shop Now</button>
+          </Card>
+          <Card>
+            <h2>Fruit and Nut Espresso</h2>
+            <p>$0</p>
+            <button className="btn btn-primary">Shop Now</button>
+          </Card>
+          <Card>
+            <h2 className="bg">Bourbon Cream Espresso</h2>
+            <p>$0</p>
+            <button className="btn btn-primary">Shop Now</button>
+          </Card>
+        </div>
+      </div>
+    </Section>
+
+    <Section>
+      <div className="container mx-auto">
+        <h1 className="text-3xl font-bold tracking-tighter">Get The Kit</h1>
+      </div>
+      <div className="container mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-1 lg:gap-2">
+          <Card>
+            <h2>Discovery Starter Pack</h2>
+            <p>$0</p>
+            <button className="btn btn-primary">Shop Now</button>
+          </Card>
+          <Card>
+            <h2>Aeropress</h2>
+            <p>$0</p>
+            <button className="btn btn-primary">Shop Now</button>
+          </Card>
+          <Card>
+            <h2>Wilfa Grinder</h2>
+            <p>$0</p>
+            <button className="btn btn-primary">Shop Now</button>
+          </Card>
+        </div>
       </div>
     </Section>
   </Layout>
