@@ -36,73 +36,53 @@ const IndexPage = () => (
     </BackgroundSection>
 
     <Section>
-      <h1 className="font-serif text-3xl font-black tracking-tighter text-center mb-12">
-        Why Fake Coffee?
-      </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-1 lg:gap-2">
-        <Card>
-          <p className="font-bold text-xl">
-            We Buy Direct from 8+ Countries & 3 Continents
-          </p>
-        </Card>
-
-        <Card>
-          <p className="font-bold text-xl">
-            Farmers Get 15-125% Above Fairtrade Rates
-          </p>
-        </Card>
-        <Card>
-          <p className="font-bold text-xl">
-            You Drink World-Class Coffee Scoring 82+/100
-          </p>
-        </Card>
+      <div className="container mx-auto">
+        <h1 className="text-3xl font-bold tracking-tighter">Why Coffee?</h1>
       </div>
-    </Section>
 
-    <Section>
-      <h1 className="font-serif text-3xl font-black tracking-tighter text-center mb-12">
-        Create A Fake Plan
-      </h1>
+      <div className="container mx-auto grid grid-cols-1 gap-12 sm:gap-6 sm:grid-cols-3 tracking-tighter">
+        <div className="flex text-center items-center justify-center flex-col h-64 space-x-1 space-y-2">
+          <p className="font-sans text-lg">
+            A typical cup of coffee that contains 75-100mg serving of caffeine
+            leads to both increased <strong>attention</strong> and{" "}
+            <strong>alertness</strong>.
+          </p>
+          <a
+            className="text-xs italic"
+            href="https://www.efsa.europa.eu/en/efsajournal/pub/2054"
+            target="_blank"
+          >
+            European Food Safety Authority (EFSA)
+          </a>
+        </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 sm:gap-1 lg:gap-2">
-        <Card>
-          <FontAwesomeIcon icon="mug-hot" size="2x" />
-          <h2>Pick Your Coffee</h2>
-          <p>
-            How you make it, how you like it, how much you want to spend. That’s
-            all we need to know for your perfect coffee plan. It’s all in your
-            hands.
+        <div className="flex text-center items-center justify-center flex-col h-64 space-x-1 space-y-2">
+          <p className="font-sans text-lg">
+            Lifelong coffee/caffeine consumption has been associated with
+            prevention of cognitive decline, improved mood, and limit
+            depression.
           </p>
-        </Card>
-        <Card>
-          <FontAwesomeIcon icon="mug-hot" size="2x" />
-          <h2>Choose a Frequency</h2>
-          <p>
-            Tell us when to send coffee. Every day, week, month... any frequency
-            at all! We’ll email 48 hours before deliveries, so you can push or
-            pause orders.
+          <a
+            className="text-xs italic"
+            href="https://www.ncbi.nlm.nih.gov/pubmed/26677204"
+            target="_blank"
+          >
+            National Center for Biotechnology Information (NCBI)
+          </a>
+        </div>
+        <div className="flex text-center items-center justify-center flex-col h-64 space-x-1 space-y-2">
+          <p className="font-sans text-lg">
+            Learn more about facts and health benefits of coffee at the
+            Institute for Scientific Information on Coffee (ISIC) website
           </p>
-        </Card>
-        <Card>
-          <FontAwesomeIcon icon="mug-hot" size="2x" />
-          <h2>Get Free Delivery</h2>
-          <p>
-            Place your order before 1pm Monday-Friday for next-day delivery. And
-            letterbox-friendly packaging means there’s no need to wait in.
-          </p>
-        </Card>
-        <Card>
-          <FontAwesomeIcon icon="mug-hot" size="2x" />
-          <h2>Pick Your Coffee</h2>
-          <p>
-            Change of plan? Change your plan. Want a different coffee, grind
-            size, or delivery frequency? Whatever it is, you can do it on your
-            account page.
-          </p>
-        </Card>
-      </div>
-      <div className="text-center mt-12">
-        <button className="btn btn-secondary">Create my fake plan</button>
+          <a
+            className="text-xs italic"
+            href="https://www.coffeeandhealth.org/about-us/"
+            target="_blank"
+          >
+            Institute for Scientific Information on Coffee (ISIC)
+          </a>
+        </div>
       </div>
     </Section>
 
@@ -132,6 +112,53 @@ const IndexPage = () => (
             investment.
           </p>
         </Card>
+      </div>
+    </Section>
+
+    <Section>
+      <div className="container mx-auto">
+        <h1 className="text-3xl font-bold tracking-tighter">Customize</h1>
+      </div>
+      <div className="container mx-auto grid grid-cols-1 gap-12 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4 tracking-tighter">
+        <div className="flex flex-col space-y-4">
+          <span className="text-3xl tracking-tight flex items-center space-x-2">
+            <FontAwesomeIcon icon="coffee" size="xs" />
+            <h2 className="font-bold text-xl tracking-tighter">
+              Pick Your Coffee
+            </h2>
+          </span>
+          <p>How you make it, how you like it. It's all in your hands.</p>
+        </div>
+        <div className="flex flex-col space-y-4">
+          <span className="text-3xl tracking-tight flex items-center space-x-2">
+            <FontAwesomeIcon icon="clock" size="xs" />
+            <h2 className="font-bold text-xl tracking-tighter">
+              Choose a Frequency
+            </h2>
+          </span>
+          <p>Get coffee every day, week, month... any frequency at all!</p>
+        </div>
+        <div className="flex flex-col space-y-4">
+          <span className="text-3xl tracking-tight flex items-center space-x-2">
+            <FontAwesomeIcon icon="paper-plane" size="xs" />
+            <h2 className="font-bold text-xl tracking-tighter">
+              Instant Delivery
+            </h2>
+          </span>
+          <p>Place your order anytime. Get your coffee immediately.</p>
+        </div>
+        <div className="flex flex-col space-y-4">
+          <span className="text-3xl tracking-tight flex items-center space-x-2">
+            <FontAwesomeIcon icon="mug-hot" size="xs" />
+            <h2 className="font-bold text-xl tracking-tighter">
+              Endless Flexibility
+            </h2>
+          </span>
+          <p>Change of plan? Change your plan.</p>
+        </div>
+      </div>
+      <div className="container mx-auto">
+        <button className="btn btn-secondary">Create my fake plan</button>
       </div>
     </Section>
 
@@ -183,7 +210,7 @@ const IndexPage = () => (
           <button className="btn btn-primary">Shop Now</button>
         </Card>
         <Card>
-          <h2>Bourbon Cream Espresso</h2>
+          <h2 className="bg">Bourbon Cream Espresso</h2>
           <p>$0</p>
           <button className="btn btn-primary">Shop Now</button>
         </Card>

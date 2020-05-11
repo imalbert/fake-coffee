@@ -8,10 +8,12 @@ import "./src/components/styles.css"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import {
   faChevronDown,
+  faClock,
   faCoffee,
   faHamburger,
   faHammer,
   faMugHot,
+  faPaperPlane,
   faPortrait,
   faShoppingCart,
   faSignInAlt,
@@ -21,10 +23,12 @@ import {
 
 library.add(
   faChevronDown,
+  faClock,
   faCoffee,
   faHamburger,
   faHammer,
   faMugHot,
+  faPaperPlane,
   faPortrait,
   faShoppingCart,
   faSignInAlt,
