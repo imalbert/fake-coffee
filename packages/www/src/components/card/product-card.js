@@ -3,7 +3,7 @@ import Card from "./card"
 
 const ProductCard = ({ title, desc, price, img = "dark" }) => (
   <Card>
-    <div className={`w-full h-24 bg-secondary-${img}`} />
+    <div className={`w-full h-40 bg-secondary-${img}`} />
     <div className="p-4 space-y-2">
       <h2 className="font-bold text-xl">{title}</h2>
       <p>{desc}</p>

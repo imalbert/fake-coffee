@@ -181,30 +181,26 @@ const IndexPage = () => (
           And our customers know it. Just check out what they’ve been saying…
         </h2>
 
-        <div className="flex">
-          <h3>Excellent</h3>
-          <span className="flex-grow">
-            <FontAwesomeIcon icon="star" size="xs" />
-            <FontAwesomeIcon icon="star" size="xs" />
-            <FontAwesomeIcon icon="star" size="xs" />
-            <FontAwesomeIcon icon="star" size="xs" />
-            <FontAwesomeIcon icon="star" size="xs" />
-          </span>
-          <p>5 Average</p>
-          <p>1 Review</p>
-        </div>
-        <div>
-          Albert M
-          <span>
-            <FontAwesomeIcon icon="star" size="xs" />
-            <FontAwesomeIcon icon="star" size="xs" />
-            <FontAwesomeIcon icon="star" size="xs" />
-            <FontAwesomeIcon icon="star" size="xs" />
-            <FontAwesomeIcon icon="star" size="xs" />
-          </span>
-          <p>It's free!</p>
-          <p>May 2020</p>
-        </div>
+        <Card noborder>
+          <div className="flex space-x-2 items-center p-4 pb-2">
+            <div className="w-6 h-6 rounded-full bg-secondary" />
+            <span className="font-bold text-base">Albert M.</span>
+            <span className="text-primary">
+              <FontAwesomeIcon icon="star" />
+              <FontAwesomeIcon icon="star" />
+              <FontAwesomeIcon icon="star" />
+              <FontAwesomeIcon icon="star" />
+              <FontAwesomeIcon icon="star" />
+            </span>
+          </div>
+          <div className="space-x-2 p-4 pt-0">
+            <p className="text-base">
+              Because of the lockdown caused by the pandemic, it's been 60 days
+              since I drank my last cup of coffee. What is life?
+            </p>
+            <p className="text-right text-sm">May 2020</p>
+          </div>
+        </Card>
       </div>
     </Section>
 
@@ -213,7 +209,7 @@ const IndexPage = () => (
         <h1 className="text-3xl font-bold tracking-tighter">Best Sellers</h1>
       </div>
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-1 lg:gap-2">
+        <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-1 lg:gap-4">
           <ProductCard
             title="Planalto"
             desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -246,7 +242,7 @@ const IndexPage = () => (
         <h1 className="text-3xl font-bold tracking-tighter">Get The Kit</h1>
       </div>
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-1 lg:gap-2">
+        <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-1 lg:gap-4">
           <ProductCard
             title="Discovery Starter Pack"
             desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
