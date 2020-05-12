@@ -1,7 +1,9 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
+
 import Header from "../header/header"
+import Hyperlink from "../hyperlink"
 
 const masthead1 = () => (
   <div className="flex flex-col h-screen bg-primary">
@@ -20,15 +22,15 @@ const masthead1 = () => (
           </h1>
         </div>
         <div className="flex flex-col items-start space-y-6 text-white">
-          <a href="https://github.com/imalbert" target="_blank">
+          <Hyperlink href="https://github.com/imalbert">
             <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a href="https://www.linkedin.com/in/albertsmanuel/" target="_blank">
+          </Hyperlink>
+          <Hyperlink href="https://www.linkedin.com/in/albertsmanuel/">
             <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-          <a href="mailto:albert.s.manuel@gmail.com">
+          </Hyperlink>
+          <Hyperlink href="mailto:albert.s.manuel@gmail.com">
             <FontAwesomeIcon icon="envelope" />
-          </a>
+          </Hyperlink>
         </div>
         <div className="text-primary-light">
           <h1 className="text-5xl font-bold leading-9">20</h1>
@@ -37,15 +39,15 @@ const masthead1 = () => (
       </div>
       <div className="items-center flex relative">
         <div className="absolute top-0 left-0 right-0 space-x-6 text-center text-white">
-          <a href="https://github.com/imalbert" target="_blank">
+          <Hyperlink href="https://github.com/imalbert">
             <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a href="https://www.linkedin.com/in/albertsmanuel/" target="_blank">
+          </Hyperlink>
+          <Hyperlink href="https://www.linkedin.com/in/albertsmanuel/">
             <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-          <a href="mailto:albert.s.manuel@gmail.com">
+          </Hyperlink>
+          <Hyperlink href="mailto:albert.s.manuel@gmail.com">
             <FontAwesomeIcon icon="envelope" />
-          </a>
+          </Hyperlink>
         </div>
         <div className="w-full">
           <div className="bg-primary border-8 border-secondary shadow-xl text-secondary">
@@ -82,18 +84,15 @@ const masthead1 = () => (
             </div>
           </div>
           <div className="absolute bottom-0 left-0 right-0 space-x-6 text-center text-primary-light">
-            <a href="https://github.com/imalbert" target="_blank">
+            <Hyperlink href="https://github.com/imalbert" target="_blank">
               <FontAwesomeIcon icon={faGithub} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/albertsmanuel/"
-              target="_blank"
-            >
+            </Hyperlink>
+            <Hyperlink href="https://www.linkedin.com/in/albertsmanuel/">
               <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a href="mailto:albert.s.manuel@gmail.com">
+            </Hyperlink>
+            <Hyperlink href="mailto:albert.s.manuel@gmail.com">
               <FontAwesomeIcon icon="envelope" />
-            </a>
+            </Hyperlink>
           </div>
         </div>
       </div>
@@ -103,15 +102,15 @@ const masthead1 = () => (
           <h1 className="text-5xl font-bold leading-10">20</h1>
         </div>
         <div className="flex flex-col items-end space-y-6 text-primary-light">
-          <a href="https://github.com/imalbert" target="_blank">
+          <Hyperlink href="https://github.com/imalbert" target="_blank">
             <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a href="https://www.linkedin.com/in/albertsmanuel/" target="_blank">
+          </Hyperlink>
+          <Hyperlink href="https://www.linkedin.com/in/albertsmanuel/">
             <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-          <a href="mailto:albert.s.manuel@gmail.com">
+          </Hyperlink>
+          <Hyperlink href="mailto:albert.s.manuel@gmail.com">
             <FontAwesomeIcon icon="envelope" />
-          </a>
+          </Hyperlink>
         </div>
         <div className="text-primary-light">
           <h1 className="text-6xl uppercase font-bold tracking-tighter leading-none">

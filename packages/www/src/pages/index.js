@@ -4,9 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Layout from "../components/layout"
 import Card from "../components/card/card"
 import Section from "../components/section"
-import SEO from "../components/seo"
+// import SEO from "../components/seo"
 import Masthead1 from "../components/sections/masthead-1"
 import ProductCard from "../components/card/product-card"
+import Hyperlink from "../components/hyperlink"
 
 const IndexPage = () => (
   <Layout>
@@ -24,13 +25,12 @@ const IndexPage = () => (
             leads to both increased <strong>attention</strong> and{" "}
             <strong>alertness</strong>.
           </p>
-          <a
+          <Hyperlink
             className="text-xs italic"
             href="https://www.efsa.europa.eu/en/efsajournal/pub/2054"
-            target="_blank"
           >
             European Food Safety Authority (EFSA)
-          </a>
+          </Hyperlink>
         </div>
 
         <div className="flex text-center items-center justify-center flex-col h-64 space-x-1 space-y-2">
@@ -39,26 +39,24 @@ const IndexPage = () => (
             prevention of cognitive decline, improved mood, and limit
             depression.
           </p>
-          <a
-            className="text-xs italic"
+          <Hyperlink
             href="https://www.ncbi.nlm.nih.gov/pubmed/26677204"
-            target="_blank"
+            className="text-xs italic"
           >
             National Center for Biotechnology Information (NCBI)
-          </a>
+          </Hyperlink>
         </div>
         <div className="flex text-center items-center justify-center flex-col h-64 space-x-1 space-y-2">
           <p className="font-sans text-lg">
             Learn more about facts and health benefits of coffee at the
             Institute for Scientific Information on Coffee (ISIC) website
           </p>
-          <a
-            className="text-xs italic"
+          <Hyperlink
             href="https://www.coffeeandhealth.org/about-us/"
-            target="_blank"
+            className="text-xs italic"
           >
             Institute for Scientific Information on Coffee (ISIC)
-          </a>
+          </Hyperlink>
         </div>
       </div>
     </Section>
