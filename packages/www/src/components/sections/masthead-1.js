@@ -48,12 +48,12 @@ const masthead1 = () => (
               </p>
             </div>
             <div className="flex-grow grid grid-cols-6 w-full h-16 gap-0 p-2">
-              <div className="bg-primary-light" />
-              <div className="bg-primary" />
-              <div className="bg-primary-dark" />
-              <div className="bg-secondary-light" />
-              <div className="bg-secondary" />
-              <div className="bg-secondary-dark" />
+              <div className="bg-primary-light transition ease-in-out duration-150 transform hover:scale-110" />
+              <div className="bg-primary transition ease-in-out duration-150 hover:shadow-lg" />
+              <div className="bg-primary-dark transition ease-in-out duration-150 transform hover:scale-110" />
+              <div className="bg-secondary-light transition ease-in-out duration-150 transform hover:scale-110" />
+              <div className="bg-secondary transition ease-in-out duration-150 transform hover:scale-110" />
+              <div className="bg-secondary-dark transition ease-in-out duration-150 transform hover:scale-110" />
             </div>
           </div>
         </div>

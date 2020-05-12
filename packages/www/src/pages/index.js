@@ -3,11 +3,12 @@ import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import Layout from "../components/layout"
-import Card from "../components/card"
+import Card from "../components/card/card"
 import Section from "../components/section"
 import BackgroundSection from "../components/background-section"
 import SEO from "../components/seo"
 import Masthead1 from "../components/sections/masthead-1"
+import ProductCard from "../components/card/product-card"
 
 const IndexPage = () => (
   <Layout>
@@ -213,21 +214,29 @@ const IndexPage = () => (
       </div>
       <div className="container mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-1 lg:gap-2">
-          <Card>
-            <h2>Planalto</h2>
-            <p>$0</p>
-            <button className="btn btn-primary">Shop Now</button>
-          </Card>
-          <Card>
-            <h2>Fruit and Nut Espresso</h2>
-            <p>$0</p>
-            <button className="btn btn-primary">Shop Now</button>
-          </Card>
-          <Card>
-            <h2 className="bg">Bourbon Cream Espresso</h2>
-            <p>$0</p>
-            <button className="btn btn-primary">Shop Now</button>
-          </Card>
+          <ProductCard
+            title="Planalto"
+            desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil."
+            img="light"
+            price="$0.00"
+          />
+          <ProductCard
+            title="Fruit and Nut Espresso"
+            desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil."
+            price="$0.00"
+          />
+          <ProductCard
+            title="Bourbon Cream Espresso"
+            desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil."
+            img="light"
+            price="$0.00"
+          />
         </div>
       </div>
     </Section>
@@ -238,21 +247,28 @@ const IndexPage = () => (
       </div>
       <div className="container mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-1 lg:gap-2">
-          <Card>
-            <h2>Discovery Starter Pack</h2>
-            <p>$0</p>
-            <button className="btn btn-primary">Shop Now</button>
-          </Card>
-          <Card>
-            <h2>Aeropress</h2>
-            <p>$0</p>
-            <button className="btn btn-primary">Shop Now</button>
-          </Card>
-          <Card>
-            <h2>Wilfa Grinder</h2>
-            <p>$0</p>
-            <button className="btn btn-primary">Shop Now</button>
-          </Card>
+          <ProductCard
+            title="Discovery Starter Pack"
+            desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil."
+            price="$0.00"
+          />
+          <ProductCard
+            title="Aeropress"
+            desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil."
+            img="light"
+            price="$0.00"
+          />
+          <ProductCard
+            title="Wilfa Grinder"
+            desc="Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil."
+            price="$0.00"
+          />
         </div>
       </div>
     </Section>
