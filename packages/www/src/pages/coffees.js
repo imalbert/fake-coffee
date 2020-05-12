@@ -1,9 +1,9 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import PageLayout from "../components/layout/page-layout"
 
 const Coffees = () => {
-  return <Layout>Coffees</Layout>
+  return <PageLayout>Coffees</PageLayout>
 }
 
 export default Coffees

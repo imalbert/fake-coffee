@@ -1,7 +1,7 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import Layout from "../components/layout"
+import HomeLayout from "../components/layout/home-layout"
 import Card from "../components/card/card"
 import Section from "../components/section"
 // import SEO from "../components/seo"
@@ -10,7 +10,7 @@ import ProductCard from "../components/card/product-card"
 import Hyperlink from "../components/hyperlink"
 
 const IndexPage = () => (
-  <Layout>
+  <HomeLayout>
     <Masthead1 />
 
     <Section>
@@ -239,7 +239,7 @@ const IndexPage = () => (
         </div>
       </div>
     </Section>
-  </Layout>
+  </HomeLayout>
 )
 
 export default IndexPage
