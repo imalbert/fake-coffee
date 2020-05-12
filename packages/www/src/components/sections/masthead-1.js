@@ -1,7 +1,7 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import Header from "../header"
+import Header from "../header/header"
 
 const masthead1 = () => (
   <div className="flex flex-col h-screen bg-primary">
@@ -19,7 +19,7 @@ const masthead1 = () => (
             Imagine
           </h1>
         </div>
-        <div className="flex flex-col space-y-6 text-left text-white">
+        <div className="flex flex-col items-start space-y-6 text-white">
           <a href="https://github.com/imalbert" target="_blank">
             <FontAwesomeIcon icon={faGithub} />
           </a>
@@ -48,7 +48,7 @@ const masthead1 = () => (
           </a>
         </div>
         <div className="w-full">
-          <div className="bg-primary border-8 border-black border-secondary rounded shadow-xl text-secondary">
+          <div className="bg-primary border-8 border-secondary shadow-xl text-secondary">
             <div className="flex flex-col w-full shadow-2xl">
               <div className="relative p-6">
                 <div className="absolute top-0 right-0 p-6">
@@ -102,7 +102,7 @@ const masthead1 = () => (
           <h1 className="text-5xl font-bold leading-9">20</h1>
           <h1 className="text-5xl font-bold leading-10">20</h1>
         </div>
-        <div className="flex flex-col space-y-6 text-right text-primary-light">
+        <div className="flex flex-col items-end space-y-6 text-primary-light">
           <a href="https://github.com/imalbert" target="_blank">
             <FontAwesomeIcon icon={faGithub} />
           </a>
