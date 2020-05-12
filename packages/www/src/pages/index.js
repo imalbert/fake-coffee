@@ -7,10 +7,11 @@ import Card from "../components/card"
 import Section from "../components/section"
 import BackgroundSection from "../components/background-section"
 import SEO from "../components/seo"
+import Masthead1 from "../components/sections/masthead-1"
 
 const IndexPage = () => (
   <Layout>
-    <BackgroundSection>
+    {/* <BackgroundSection>
       <div className="container mx-auto">
         <SEO title="Home" />
         <h1 className="font-serif text-5xl font-black tracking-tighter inline-block">
@@ -28,12 +29,14 @@ const IndexPage = () => (
           Instant delivery for free!
           <br />
         </p>
-        <button className="btn btn-primary mr-2">Browse Coffees</button>
+        <button className="btn btn-primary mr-2">Browse coffees</button>
         <button className="btn btn-secondary">
-          <Link to="/page-2/">Create a plan</Link>
+          <Link to="/page-2/">Create a fake plan</Link>
         </button>
       </div>
-    </BackgroundSection>
+    </BackgroundSection> */}
+
+    <Masthead1 />
 
     <Section>
       <div className="container mx-auto">

@@ -11,8 +11,8 @@ const Header = () => (
           <div className="flex items-center">
             <FontAwesomeIcon
               icon="coffee"
-              size="2x"
-              className="w-auto h-6 text-secondary-light"
+              size="lg"
+              className="text-secondary-light"
             />
           </div>
 
@@ -44,59 +44,57 @@ const Header = () => (
               href="#"
               className="btn btn-secondary text-base font-medium leading-6 align-left"
             >
-              Create a fake coffee plan
+              Create a fake plan
             </a>
             <div>
               <button
                 type="button"
-                className="text-secondary-light text-base font-medium leading-6"
+                className="text-secondary font-medium text-lg tracking-tighter"
               >
-                <span className="mr-2">Shop</span>
-                <FontAwesomeIcon icon="chevron-down" size="sm" />
+                Shop
+                <FontAwesomeIcon
+                  icon="chevron-down"
+                  size="sm"
+                  className="ml-2"
+                />
               </button>
               <div className="absolute -ml-4 mt-3 px-2 w-screen max-w-md">
                 <div className="rounded-lg shadow-xs overflow-hidden">
                   <div className="rounded-lg shadow-lg">
-                    <div className="z-20 relative grid gap-6 bg-white px-5 py-6 lg:gap-8 lg:p-8">
+                    <div className="z-20 relative bg-white grid p-2 lg:p-4 gap-1 lg:gap-2">
                       <a
                         href="#"
-                        className="p-3 flex items-start space-x-4 rounded-lg hover:bg-accent-light transition ease-in-out duration-150"
+                        className="p-3 flex items-center space-x-4 rounded-lg hover:opacity-75 transition ease-in-out duration-150"
                       >
                         <FontAwesomeIcon
                           icon="coffee"
-                          size="lg"
+                          size="2x"
                           className="text-secondary-light"
                         />
-                        <div className="space-y-1">
-                          <p className="text-secondary-light text-base font-medium leading-6">
+                        <div>
+                          <p className="text-secondary font-medium text-lg tracking-tighter">
                             Coffee
                           </p>
-                          <p className="text-secondary-light text-sm font-medium leading-6">
-                            Want the best coffee? Stop looking. Freshly ground
-                            and roasted, 100% speciality grade, sourced direct
-                            from the farmer. Choose a 250g bag of ground or
-                            wholebean coffee, or a pack of 40 pods.
+                          <p className="text-secondary font-medium text-lg tracking-tighter opacity-75">
+                            Lorem ipsum dolor sit amet
                           </p>
                         </div>
                       </a>
                       <a
                         href="#"
-                        className="p-3 flex items-start space-x-4 rounded-lg hover:bg-accent-light transition ease-in-out duration-150"
+                        className="p-3 flex items-center space-x-4 rounded-lg hover:opacity-75 transition ease-in-out duration-150"
                       >
                         <FontAwesomeIcon
                           icon="hammer"
-                          size="lg"
+                          size="2x"
                           className="text-secondary-light"
                         />
-                        <div className="space-y-1">
-                          <p className="text-secondary-light text-base font-medium leading-6">
+                        <div>
+                          <p className="text-secondary font-medium text-lg tracking-tighter">
                             Equipment
                           </p>
-                          <p className="text-secondary-light text-sm font-medium leading-6">
-                            All the coffee brewing tools and coffee making
-                            equipment you could possibly want. Whether you’re a
-                            French press fan, or doe-eyed for drip coffee, we’ve
-                            got whatever you need to brew.
+                          <p className="text-secondary font-medium text-lg tracking-tighter opacity-75">
+                            Lorem ipsum dolor sit amet
                           </p>
                         </div>
                       </a>
@@ -107,7 +105,7 @@ const Header = () => (
             </div>
             <a
               href="#"
-              className="text-secondary-light text-base font-medium leading-6"
+              className="text-secondary font-medium text-lg tracking-tighter"
             >
               About us
             </a>
@@ -116,7 +114,7 @@ const Header = () => (
           <div className="hidden lg:flex justify-end items-center space-x-8">
             <a
               href="#"
-              className="text-secondary-light text-base font-medium leading-6"
+              className="text-secondary font-medium text-lg tracking-tighter"
             >
               Sign in
             </a>
@@ -124,11 +122,7 @@ const Header = () => (
               href="#"
               className="text-secondary-light text-base font-medium leading-6"
             >
-              <FontAwesomeIcon
-                icon="shopping-cart"
-                size="2x"
-                className="w-6 h-6"
-              />
+              <FontAwesomeIcon icon="shopping-cart" size="lg" />
             </a>
           </div>
         </div>
@@ -139,7 +133,7 @@ const Header = () => (
             <div className="pt-5 pb-6 px-5 space-y-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-secondary-light text-base font-medium leading-6">
+                  <p className="text-secondary font-medium text-lg tracking-tighter">
                     Fake
                   </p>
                 </div>
@@ -162,7 +156,7 @@ const Header = () => (
                       size="lg"
                       className="text-secondary-light"
                     />
-                    <p className="text-secondary-light text-base font-medium leading-6">
+                    <p className="text-secondary font-medium text-lg tracking-tighter">
                       Coffee
                     </p>
                   </a>
@@ -175,7 +169,7 @@ const Header = () => (
                       size="lg"
                       className="text-secondary-light"
                     />
-                    <p className="text-secondary-light text-base font-medium leading-6">
+                    <p className="text-secondary font-medium text-lg tracking-tighter">
                       Equipment
                     </p>
                   </a>
@@ -188,7 +182,7 @@ const Header = () => (
                       size="lg"
                       className="text-secondary-light"
                     />
-                    <p className="text-secondary-light text-base font-medium leading-6">
+                    <p className="text-secondary font-medium text-lg tracking-tighter">
                       About
                     </p>
                   </a>
@@ -201,7 +195,7 @@ const Header = () => (
                       size="lg"
                       className="text-secondary-light"
                     />
-                    <p className="text-secondary-light text-base font-medium leading-6">
+                    <p className="text-secondary font-medium text-lg tracking-tighter">
                       Sign In
                     </p>
                   </a>
@@ -214,7 +208,7 @@ const Header = () => (
                       size="lg"
                       className="text-secondary-light"
                     />
-                    <p className="text-secondary-light text-base font-medium leading-6">
+                    <p className="text-secondary font-medium text-lg tracking-tighter">
                       Shopping Cart
                     </p>
                   </a>

@@ -24,8 +24,8 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="h-screen flex flex-col bg-white">
-      <Header siteTitle={data.site.siteMetadata.title} />
+    <div className="flex flex-col bg-white">
+      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <main className="flex-grow flex flex-col">{children}</main>
       <Footer />
     </div>
