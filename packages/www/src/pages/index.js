@@ -1,42 +1,15 @@
 import React from "react"
-import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import Layout from "../components/layout"
 import Card from "../components/card/card"
 import Section from "../components/section"
-import BackgroundSection from "../components/background-section"
 import SEO from "../components/seo"
 import Masthead1 from "../components/sections/masthead-1"
 import ProductCard from "../components/card/product-card"
 
 const IndexPage = () => (
   <Layout>
-    {/* <BackgroundSection>
-      <div className="container mx-auto">
-        <SEO title="Home" />
-        <h1 className="font-serif text-5xl font-black tracking-tighter inline-block">
-          Fake Coffee
-        </h1>
-        <FontAwesomeIcon
-          icon="mug-hot"
-          size="2x"
-          className="w-auto h-8 inline-block"
-        />
-        <h1 className="font-serif text-5xl italic leading-3">Imagine</h1>
-        <p className="mt-10 mb-6">
-          Kick off your day with one of our best, made-up coffees.
-          <br />
-          Instant delivery for free!
-          <br />
-        </p>
-        <button className="btn btn-primary mr-2">Browse coffees</button>
-        <button className="btn btn-secondary">
-          <Link to="/page-2/">Create a fake plan</Link>
-        </button>
-      </div>
-    </BackgroundSection> */}
-
     <Masthead1 />
 
     <Section>

@@ -28,7 +28,7 @@ const Header = () => (
               <Icon icon="chevron-down" size="sm" className="ml-2" />
             </HeaderLink>
             <HeaderFlyout>
-              <HeaderLink>
+              <HeaderLink to="/coffees">
                 <div className="p-2 flex items-center space-x-4 rounded-lg">
                   <Icon icon="coffee" size="2x" />
                   <div>
