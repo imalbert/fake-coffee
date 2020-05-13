@@ -13,13 +13,14 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-background-image-es5`,
       options: {
         specialChars: `/:`,
-      }
+      },
     },
     {
       resolve: `gatsby-plugin-postcss`,
