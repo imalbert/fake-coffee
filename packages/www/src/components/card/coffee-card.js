@@ -2,7 +2,16 @@ import React from "react"
 
 import Icon from "../icon/icon"
 
-const CoffeeCard = ({ title, taste, roast, origin, grown, price, weight }) => (
+const CoffeeCard = ({
+  title,
+  taste,
+  roast,
+  origin,
+  grown,
+  price,
+  weight,
+  id,
+}) => (
   <div className="transition ease-in-out duration-150 transform hover:scale-105 hover:shadow-lg">
     <div className={`w-full h-40 border`}>
       <button type="button" className="uppercase text-xs float-right m-2">
