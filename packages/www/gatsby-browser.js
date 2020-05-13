@@ -9,11 +9,15 @@ import "@fortawesome/fontawesome-svg-core/styles.css"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import {
   faChevronDown,
+  faChevronRight,
   faClock,
   faCoffee,
   faEnvelope,
+  faFire,
   faHamburger,
   faHammer,
+  faLeaf,
+  faMapMarker,
   faMugHot,
   faPaperPlane,
   faPortrait,
@@ -25,11 +29,15 @@ import {
 
 library.add(
   faChevronDown,
+  faChevronRight,
   faClock,
   faCoffee,
   faEnvelope,
+  faFire,
   faHamburger,
   faHammer,
+  faLeaf,
+  faMapMarker,
   faMugHot,
   faPaperPlane,
   faPortrait,
