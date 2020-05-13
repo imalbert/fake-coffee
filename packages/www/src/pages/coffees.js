@@ -1,6 +1,6 @@
 import React from "react"
 
-import PageLayout from "../components/layout/page-layout"
+import PageLayout from "../components/layout/subpage-layout"
 import CoffeeCard from "../components/card/coffee-card"
 
 const Coffees = () => {

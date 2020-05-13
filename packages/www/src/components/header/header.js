@@ -62,30 +62,28 @@ const Header = () => (
         </div>
       </HeaderLg>
       <HeaderSm>
-        <div>
-          <nav className="grid row-gap-8">
-            <HeaderLink>
-              <Icon icon="coffee" size="lg" className="mr-4" />
-              Coffee
-            </HeaderLink>
-            <HeaderLink>
-              <Icon icon="hammer" size="lg" className="mr-4" />
-              Equipment
-            </HeaderLink>
-            <HeaderLink>
-              <Icon icon="portrait" size="lg" className="mr-4" />
-              About us
-            </HeaderLink>
-            <HeaderLink>
-              <Icon icon="coffee" size="lg" className="mr-4" />
-              Sign in
-            </HeaderLink>
-            <HeaderLink>
-              <Icon icon="shopping-cart" size="lg" className="mr-4" />
-              Shopping cart
-            </HeaderLink>
-          </nav>
-        </div>
+        <nav className="grid row-gap-8">
+          <HeaderLink>
+            <Icon icon="coffee" size="lg" className="mr-4" />
+            Coffee
+          </HeaderLink>
+          <HeaderLink>
+            <Icon icon="hammer" size="lg" className="mr-4" />
+            Equipment
+          </HeaderLink>
+          <HeaderLink>
+            <Icon icon="portrait" size="lg" className="mr-4" />
+            About us
+          </HeaderLink>
+          <HeaderLink>
+            <Icon icon="sign-in-alt" size="lg" className="mr-4" />
+            Sign in
+          </HeaderLink>
+          <HeaderLink>
+            <Icon icon="shopping-cart" size="lg" className="mr-4" />
+            Shopping cart
+          </HeaderLink>
+        </nav>
       </HeaderSm>
     </header>
   </div>
