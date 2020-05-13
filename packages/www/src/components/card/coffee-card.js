@@ -1,6 +1,7 @@
 import React from "react"
 
 import Icon from "../icon/icon"
+import HeaderLink from "../header/header-link"
 
 const CoffeeCard = ({
   title,
@@ -10,13 +11,13 @@ const CoffeeCard = ({
   grown,
   price,
   weight,
-  id,
+  slug,
 }) => (
   <div className="transition ease-in-out duration-150 transform hover:scale-105 hover:shadow-lg">
     <div className={`w-full h-40 border`}>
-      <button type="button" className="uppercase text-xs float-right m-2">
+      <HeaderLink to={slug} className="uppercase text-xs float-right m-2">
         More info
-      </button>
+      </HeaderLink>
     </div>
     <div className="p-2">
       <h2 className="text-lg font-bold">{title}</h2>

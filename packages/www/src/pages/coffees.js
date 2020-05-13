@@ -19,14 +19,17 @@ const Coffees = () => {
               price
               weight
             }
+            fields {
+              slug
+            }
           }
         }
       }
     }
   `)
-  const coffees = data.allMarkdownRemark.edges.map(edge => ({
-    ...edge.node.frontmatter,
-    id: edge.id,
+  const coffees = data.allMarkdownRemark.edges.map(({ node }) => ({
+    ...node.frontmatter,
+    slug: node.fields.slug,
   }))
 
   return (
