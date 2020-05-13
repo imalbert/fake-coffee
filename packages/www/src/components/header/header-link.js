@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const HeaderLink = ({ to, children, appendedClassNames = "" }) => (
+const HeaderLink = ({ to = "/", children, appendedClassNames = "" }) => (
   <Link
     to={to}
     className={`
