@@ -47,7 +47,7 @@ const CoffeePlan = () => {
   }))
 
   return (
-    <PageLayout header={{ title: "Create a plan", subtitle: "good idea!" }}>
+    <PageLayout header={{ title: "Create a plan", subtitle: "a nice plan!" }}>
       <section className="container mx-auto">
         <StepLevel>
           <Text.Title>Coffee type</Text.Title>

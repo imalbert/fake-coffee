@@ -5,14 +5,14 @@ import HeaderLink from "./header-link"
 import HeaderButton from "./header-button"
 import Icon from "../icon/icon"
 
-const Header = () => {
+const Header = ({ padding = "6" }) => {
   const [flyoutOpen, toggleFlyout] = useState(false)
   const [burgerOpen, toggleBurger] = useState(false)
 
   return (
     <div className="container mx-auto">
       <header className="relative">
-        <HeaderLg>
+        <HeaderLg padding={padding}>
           <HeaderLink>
             <Icon icon="coffee" size="lg" />
           </HeaderLink>
@@ -70,7 +70,11 @@ const Header = () => {
         </HeaderLg>
         <HeaderSm isOpen={burgerOpen}>
           <nav className="grid row-gap-8">
-            <HeaderLink>
+            <HeaderLink to="/coffee-plan">
+              <Icon icon="calendar-check" size="lg" className="mr-4" />
+              Create a fake plan
+            </HeaderLink>
+            <HeaderLink to="/coffees">
               <Icon icon="coffee" size="lg" className="mr-4" />
               Coffee
             </HeaderLink>
@@ -113,21 +117,19 @@ const HeaderFlyout = ({ children, isOpen }) => (
   </div>
 )
 
-export const HeaderLg = ({ children }) => (
-  <div>
-    <div className="flex justify-between items-center p-6 space-x-8">
-      {children}
-    </div>
+export const HeaderLg = ({ children, padding }) => (
+  <div className={`flex justify-between items-center p-${padding} space-x-8`}>
+    {children}
   </div>
 )
 
 export const HeaderSm = ({ children, alwaysShow, isOpen }) => (
   <div
     className={`
-    z-20 absolute top-0 right-0 w-64 mt-20
+    z-20 absolute top-0 right-0 w-64 mt-8
 		transition transform origin-top-right
 		${isOpen ? "" : "hidden"}
-    ${alwaysShow ? "" : "lg:hidden"}`}
+    ${alwaysShow ? "" : "sm:hidden"}`}
   >
     <div className="border-4 border-secondary bg-primary shadow-xs">
       <div className="shadow-lg">

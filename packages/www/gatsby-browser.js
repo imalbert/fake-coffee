@@ -8,6 +8,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css"
 
 import { library } from "@fortawesome/fontawesome-svg-core"
 import {
+  faCalendarCheck,
   faChevronDown,
   faChevronRight,
   faClock,
@@ -28,6 +29,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 
 library.add(
+  faCalendarCheck,
   faChevronDown,
   faChevronRight,
   faClock,

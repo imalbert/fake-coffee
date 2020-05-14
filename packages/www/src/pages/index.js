@@ -6,6 +6,7 @@ import Card from "../components/card/card"
 import Section from "../components/section"
 // import SEO from "../components/seo"
 import Masthead1 from "../components/sections/masthead-1"
+import Masthead2 from "../components/sections/masthead-2"
 import ProductCard from "../components/card/product-card"
 import Hyperlink from "../components/hyperlink"
 
@@ -239,6 +240,7 @@ const IndexPage = () => (
         </div>
       </div>
     </Section>
+    <Masthead2 />
   </HomeLayout>
 )
 

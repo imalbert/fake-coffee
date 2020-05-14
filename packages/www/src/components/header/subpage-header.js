@@ -35,7 +35,11 @@ const SubpageHeader = ({ title, subtitle }) => {
 
           <HeaderSm alwaysShow isOpen={burgerOpen}>
             <nav className="grid row-gap-8">
-              <HeaderLink>
+              <HeaderLink to="/coffee-plan">
+                <Icon icon="calendar-check" size="lg" className="mr-4" />
+                Create a fake plan
+              </HeaderLink>
+              <HeaderLink to="coffees">
                 <Icon icon="coffee" size="lg" className="mr-4" />
                 Coffee
               </HeaderLink>
