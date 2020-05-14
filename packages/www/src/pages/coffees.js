@@ -6,7 +6,7 @@ import CoffeeCard from "../components/card/coffee-card"
 
 const Coffees = () => {
   const data = useStaticQuery(graphql`
-    query Cofees {
+    query Coffees {
       allMarkdownRemark {
         edges {
           node {

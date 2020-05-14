@@ -25,7 +25,7 @@ const Header = () => {
           </HeaderButton>
 
           <nav className="hidden lg:flex lg:flex-grow justify-start items-center space-x-8">
-            <HeaderLink>
+            <HeaderLink to="/coffee-plan">
               <div className="btn btn-secondary">Create a fake plan</div>
             </HeaderLink>
             <div>
