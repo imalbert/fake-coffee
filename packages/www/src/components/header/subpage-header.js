@@ -5,7 +5,7 @@ import HeaderLink from "./header-link"
 import HeaderButton from "./header-button"
 import Icon from "../icon/icon"
 
-const SubpageHeader = () => {
+const SubpageHeader = ({ title, subtitle }) => {
   const [burgerOpen, toggleBurger] = useState(false)
 
   return (
@@ -16,14 +16,14 @@ const SubpageHeader = () => {
             <Icon icon="coffee" size="lg" />
           </HeaderLink>
 
-          <HeaderLink>
+          <HeaderButton>
             <h1 className="text-3xl font-bold tracking-tight leading-8 text-center">
-              Coffee
+              {title}
             </h1>
             <p className="uppercase font-normal text-xs text-center">
-              around the globe
+              {subtitle}
             </p>
-          </HeaderLink>
+          </HeaderButton>
 
           <HeaderButton
             onClick={() => {

@@ -40,12 +40,14 @@ const CoffeePlan = () => {
       }
     }
   `)
+
   const coffees = data.allMarkdownRemark.edges.map(({ node }) => ({
     ...node.frontmatter,
     slug: node.fields.slug,
   }))
+
   return (
-    <PageLayout>
+    <PageLayout header={{ title: "Create a plan", subtitle: "good idea!" }}>
       <section className="container mx-auto">
         <StepLevel>
           <Text.Title>Coffee type</Text.Title>

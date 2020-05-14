@@ -6,7 +6,12 @@ import CoffeeCard from "../components/card/coffee-card"
 export default function BlogPost({ data }) {
   const post = data.markdownRemark
   return (
-    <PageLayout>
+    <PageLayout
+      header={{
+        title: post.frontmatter.title,
+        subtitle: post.frontmatter.origin,
+      }}
+    >
       <CoffeeCard {...post.frontmatter} />
     </PageLayout>
   )

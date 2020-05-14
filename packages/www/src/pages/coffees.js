@@ -33,7 +33,7 @@ const Coffees = () => {
   }))
 
   return (
-    <PageLayout>
+    <PageLayout header={{ title: "Coffee", subtitle: "around the globe" }}>
       <section className="container mx-auto">
         <div className="grid gap-8 sm:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           {coffees.map(coffee => (
