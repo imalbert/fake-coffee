@@ -1,0 +1,10 @@
+#coffee-page_toc ul {
+  @apply list-disc ml-6;
+}
+#coffee-page_toc li > a {
+  @apply underline;
+}
+
+#coffee-page_wiki h2 {
+  @apply text-2xl font-bold;
+}

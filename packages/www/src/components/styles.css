@@ -1,11 +1,13 @@
 @import "tailwindcss/base";
 
-svg { vertical-align: -0.125em; }
+svg {
+  vertical-align: -0.125em;
+}
 
 @import "tailwindcss/components";
 
 @import "./button.css";
 @import "./background-section.css";
+@import "../templates/coffee-page.css";
 
 @import "tailwindcss/utilities";
-
