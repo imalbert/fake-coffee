@@ -28,6 +28,7 @@ import {
   faSignInAlt,
   faStar,
   faTimes,
+  faWeightHanging,
 } from "@fortawesome/free-solid-svg-icons"
 
 library.add(
@@ -50,5 +51,6 @@ library.add(
   faShoppingCart,
   faSignInAlt,
   faStar,
-  faTimes
+  faTimes,
+  faWeightHanging
 )

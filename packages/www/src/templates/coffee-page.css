@@ -8,3 +8,8 @@
 #coffee-page_wiki h2 {
   @apply text-2xl font-bold;
 }
+
+#coffee-page_toc,
+#coffee-page_wiki {
+  @apply tracking-tight;
+}

@@ -50,7 +50,7 @@ export default function CoffeePage({ data }) {
                   <Icon icon="map-marker" className="text-secondary-light" />
                   <span
                     className="tracking-tight leading-3"
-                    style={{ fontSize: "0.5rem" }}
+                    style={{ fontSize: "0.6rem" }}
                   >
                     Lorem ipsum dolor, sit amet, 74903-4
                   </span>
@@ -60,7 +60,7 @@ export default function CoffeePage({ data }) {
                   <Icon icon="paper-plane" className="text-secondary-light" />
                   <span
                     className="text-xs tracking-tight leading-3"
-                    style={{ fontSize: "0.5rem" }}
+                    style={{ fontSize: "0.6rem" }}
                   >
                     +63 999-999-999
                     <br />
@@ -70,7 +70,7 @@ export default function CoffeePage({ data }) {
               </div>
 
               <div className="flex-grow flex w-1/3 sm:w-1/2 items-center space-x-1">
-                <div class="relative w-64 sm:w-full shadow-sm">
+                <div class="relative w-full shadow-sm">
                   <input
                     id="search"
                     class="form-input w-full block p-2 sm:text-sm sm:leading-5"
@@ -123,14 +123,14 @@ export default function CoffeePage({ data }) {
                       />
                     </Hyperlink>
                   </div>
-                  <div className="w-40 sm:w-64">
+                  <div className="w-64 sm:w-auto">
                     <Text.Heading1>{title}</Text.Heading1>
-                    <p className="font-serif italic">{taste}</p>
+                    <p className="font-serif italic leading-6">{taste}</p>
                   </div>
-                  <figure className="sm:-mr-32 right-0 top-0 z-10 absolute mr-3">
+                  <figure className="-mr-40 sm:-mr-32 right-0 top-0 z-10 absolute mr-3">
                     <Img fluid={sources} className="w-56 sm:w-64 mx-auto" />
                   </figure>
-                  <div className="sm:mx-0 w-64 text-base leading-loose">
+                  <div className="sm:mx-0 w-56 sm:w-64 text-sm sm:text-base leading-loose">
                     <p className="">
                       <Icon icon="fire" />{" "}
                       <span className="font-bold">{roast}</span> roast
@@ -143,11 +143,14 @@ export default function CoffeePage({ data }) {
                       <Icon icon="leaf" /> grown by{" "}
                       <span className="font-bold">{grown}</span>
                     </p>
+                    <p className="">
+                      <Icon icon="weight-hanging" /> <strong>{weight}</strong>{" "}
+                      per bag
+                    </p>
                   </div>
 
                   <div className="flex items-baseline space-x-4">
                     <Text.Heading1>{price}</Text.Heading1>
-                    <Text.Subtitle>{weight}</Text.Subtitle>
                     <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
                       <Icon icon="plus" className="text-white" />
                     </div>
@@ -156,7 +159,7 @@ export default function CoffeePage({ data }) {
               </section>
 
               <section id="coffee-page_toc" className="pr-4 mt-8 space-y-8">
-                <h1 class="text-2xl font-bold">Contents</h1>
+                <h1 className="text-2xl font-bold">Contents</h1>
                 <div dangerouslySetInnerHTML={{ __html: tableOfContents }} />
               </section>
 
@@ -165,6 +168,33 @@ export default function CoffeePage({ data }) {
                 className="pr-4 mt-8 space-y-8"
                 dangerouslySetInnerHTML={{ __html: html }}
               />
+
+              <section className="pr-4 mt-8 mb-4 space-x-1 flex items-center">
+                <p className="text-xs font-serif italic flex-grow">
+                  Built with Gatsby
+                </p>
+                <Hyperlink href="https://github.com/imalbert">
+                  <Icon
+                    icon={faGithub}
+                    size="lg"
+                    className="text-secondary-light"
+                  />
+                </Hyperlink>
+                <Hyperlink href="https://www.linkedin.com/in/albertsmanuel/">
+                  <Icon
+                    icon={faLinkedin}
+                    size="lg"
+                    className="text-secondary-light"
+                  />
+                </Hyperlink>
+                <Hyperlink href="mailto:albert.s.manuel@gmail.com">
+                  <Icon
+                    icon="envelope"
+                    size="lg"
+                    className="text-secondary-light"
+                  />
+                </Hyperlink>
+              </section>
             </div>
           </main>
 
