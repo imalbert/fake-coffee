@@ -1,5 +1,5 @@
 ---
-title: "Kapeng Barako"
+title: "Arabica"
 type: "coffee"
 taste: "Hints of chocolate, nuts, and caramel"
 roast: "Light"

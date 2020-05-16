@@ -1,27 +1,25 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useStaticQuery, graphql } from 'gatsby';
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+	const data = useStaticQuery(graphql`
+		query SiteTitleQuery {
+			site {
+				siteMetadata {
+					title
+				}
+			}
+		}
+	`);
 
-  console.log(
-    `Welcome to ${data.site.siteMetadata.title}. Get your fake coffee for free.`
-  )
+	console.log(`Welcome to ${data.site.siteMetadata.title}. Get your fake coffee for free.`);
 
-  return <div className="flex flex-col bg-white min-h-screen">{children}</div>
-}
+	return <div className="bg-gray-100 text-gray-900 flex flex-col min-h-screen">{children}</div>;
+};
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
+	children: PropTypes.node.isRequired
+};
 
-export default Layout
+export default Layout;

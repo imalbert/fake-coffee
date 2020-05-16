@@ -1,18 +1,20 @@
-import React from "react"
-import Card from "./card"
+import React from 'react';
+import { Link } from 'gatsby';
+import Img from 'gatsby-image';
 
-const ProductCard = ({ title, desc, price, img = "dark" }) => (
-  <Card>
-    <div className={`w-full h-40 bg-secondary-${img}`} />
-    <div className="p-4 space-y-2">
-      <h2 className="font-bold text-xl">{title}</h2>
-      <p>{desc}</p>
-    </div>
-    <div className="p-4 flex justify-between items-center">
-      <h3 className="font-bold text-xl">{price}</h3>
-      <button className="btn btn-primary">Add to cart</button>
-    </div>
-  </Card>
-)
+import Text from '../text';
 
-export default ProductCard
+const ProductCard = ({ img, title, price, slug }) => (
+	<div className="p-6 relative w-full bg-gray-100">
+		<Img className="mx-auto" alt={title} fluid={img.childImageSharp.fluid} />
+		<Link
+			to={slug}
+			className="p-4 opacity-0 hover:opacity-75 transition duration-150 bg-gray-100 flex flex-col justify-center items-center absolute inset-0"
+		>
+			<Text.l2 className="font-bold">{title}</Text.l2>
+			<Text.l2 className="font-bold">{price}</Text.l2>
+		</Link>
+	</div>
+);
+
+export default ProductCard;

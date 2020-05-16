@@ -1,34 +1,22 @@
-import React from "react"
+import React from 'react';
 
-import Title from "./title"
-import Subtitle from "./subtitle"
-import Heading1 from "./heading1"
+import Title from './title';
+import Subtitle from './subtitle';
+import Heading1 from './heading1';
 
-const Span = ({ cls, children }) => <span className={cls}>{children}</span>
+const P = ({ cls, children }) => <p className={cls}>{children}</p>;
 
 export default {
-  Title,
-  Subtitle,
-  Heading1,
-  h1: ({ children, className = "" }) => (
-    <Span cls={`${className} text-5xl`}>{children}</Span>
-  ),
-  h2: ({ children, className = "" }) => (
-    <Span cls={`${className} text-3xl`}>{children}</Span>
-  ),
-  h3: ({ children, className = "" }) => (
-    <Span cls={`${className} text-xl`}>{children}</Span>
-  ),
-  l1: ({ children, className = "" }) => (
-    <Span cls={`${className} text-base`}>{children}</Span>
-  ),
-  l2: ({ children, className = "" }) => (
-    <Span cls={`${className} text-sm`}>{children}</Span>
-  ),
-  p1: ({ children, className = "" }) => (
-    <Span cls={`${className} text-sm`}>{children}</Span>
-  ),
-  p2: ({ children, className = "" }) => (
-    <Span cls={`${className} text-xs`}>{children}</Span>
-  ),
-}
+	Title,
+	Subtitle,
+	Heading1,
+	h1: ({ children, className = '' }) => <P cls={`${className} text-6xl`}>{children}</P>,
+	h2: ({ children, className = '' }) => (
+		<P cls={`${className} font-bold text-4xl leading-10 tracking-tight`}>{children}</P>
+	),
+	h3: ({ children, className = '' }) => <P cls={`${className} text-2xl`}>{children}</P>,
+	l1: ({ children, className = '' }) => <P cls={`${className} font-extrabold uppercase text-sm`}>{children}</P>,
+	l2: ({ children, className = '' }) => <P cls={`${className} font-bold text-gray-700 text-sm`}>{children}</P>,
+	p1: ({ children, className = '' }) => <P cls={`${className} text-sm`}>{children}</P>,
+	p2: ({ children, className = '' }) => <P cls={`${className} text-xs`}>{children}</P>
+};
