@@ -5,7 +5,7 @@ const HeaderButton = ({ children, onClick, appendedClassNames = "" }) => (
     type="button"
     onClick={onClick}
     className={`
-      text-secondary font-medium text-lg
+      text-gray-800font-medium text-lg
       hover:opacity-75 transition ease-in-out duration-150
       ${appendedClassNames}
     `}

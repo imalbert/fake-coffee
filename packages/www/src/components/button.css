@@ -10,10 +10,10 @@
   @apply bg-primary-dark;
 }
 
-.btn-secondary {
-  @apply bg-secondary;
+.btn-gray-800 {
+  @apply bg-gray-900;
 }
 
 .btn-secondary:hover {
-  @apply bg-secondary-dark;
+  @apply bg-gray-800;
 }

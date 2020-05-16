@@ -138,7 +138,7 @@ const IndexPage = () => (
         </div>
       </div>
       <div className="container mx-auto">
-        <button className="btn btn-secondary">Create my fake plan</button>
+        <button className="btn btn-gray-800">Create my fake plan</button>
       </div>
     </Section>
 
@@ -155,7 +155,7 @@ const IndexPage = () => (
 
         <Card noborder>
           <div className="flex space-x-2 items-center p-4 pb-2">
-            <div className="w-6 h-6 rounded-full bg-secondary" />
+            <div className="w-6 h-6 rounded-full bg-gray-800" />
             <span className="font-bold text-base">Albert M.</span>
             <span className="text-primary">
               <FontAwesomeIcon icon="star" />

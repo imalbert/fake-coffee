@@ -26,7 +26,7 @@ const Header = ({ padding = "6" }) => {
 
           <nav className="hidden lg:flex lg:flex-grow justify-start items-center space-x-8">
             <HeaderLink to="/coffee-plan">
-              <div className="btn btn-secondary">Create a fake plan</div>
+              <div className="btn btn-gray-800">Create a fake plan</div>
             </HeaderLink>
             <div>
               <HeaderButton onClick={() => toggleFlyout(!flyoutOpen)}>
@@ -107,7 +107,7 @@ const HeaderFlyout = ({ children, isOpen }) => (
       isOpen ? "" : "hidden"
     }`}
   >
-    <div className="border-8 border-secondary bg-primary overflow-hidden shadow-xs">
+    <div className="border-8 border-gray-800bg-primary overflow-hidden shadow-xs">
       <div className="shadow-lg">
         <div className="relative grid p-2 lg:p-4 gap-1 lg:gap-2">
           {children}
@@ -131,7 +131,7 @@ export const HeaderSm = ({ children, alwaysShow, isOpen }) => (
 		${isOpen ? "" : "hidden"}
     ${alwaysShow ? "" : "sm:hidden"}`}
   >
-    <div className="border-4 border-secondary bg-primary shadow-xs">
+    <div className="border-4 border-gray-800bg-primary shadow-xs">
       <div className="shadow-lg">
         <div className="pt-6 pb-6 px-5 space-y-6">{children}</div>
       </div>

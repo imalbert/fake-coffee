@@ -50,7 +50,7 @@ const masthead1 = () => (
           </Hyperlink>
         </div>
         <div className="w-full">
-          <div className="bg-primary border-8 border-secondary shadow-xl text-secondary">
+          <div className="bg-primary border-8 border-gray-800shadow-xl text-gray-800">
             <div className="flex flex-col w-full shadow-2xl">
               <div className="relative p-6">
                 <div className="absolute top-0 right-0 p-6">
@@ -77,9 +77,9 @@ const masthead1 = () => (
                 <div className="bg-primary-light transition ease-in-out duration-150 transform hover:scale-110" />
                 <div className="bg-primary transition ease-in-out duration-150 hover:shadow-lg" />
                 <div className="bg-primary-dark transition ease-in-out duration-150 transform hover:scale-110" />
-                <div className="bg-secondary-light transition ease-in-out duration-150 transform hover:scale-110" />
-                <div className="bg-secondary transition ease-in-out duration-150 transform hover:scale-110" />
-                <div className="bg-secondary-dark transition ease-in-out duration-150 transform hover:scale-110" />
+                <div className="bg-gray-700 transition ease-in-out duration-150 transform hover:scale-110" />
+                <div className="bg-gray-800transition ease-in-out duration-150 transform hover:scale-110" />
+                <div className="bg-gray-900 transition ease-in-out duration-150 transform hover:scale-110" />
               </div>
             </div>
           </div>

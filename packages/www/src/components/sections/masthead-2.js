@@ -30,7 +30,7 @@ export default function () {
 
               <div className="hidden sm:flex justify-between items-center space-x-8">
                 <HeaderLink to="/coffee-plan">
-                  <div className="btn btn-secondary">Create a fake plan</div>
+                  <div className="btn btn-gray-800">Create a fake plan</div>
                 </HeaderLink>
                 <HeaderLink to="/coffees" color="white">
                   Shop
@@ -44,7 +44,7 @@ export default function () {
             <HeaderSm isOpen={burgerOpen}>
               <nav className="grid row-gap-8">
                 <HeaderLink to="/coffee-plan">
-                  <div className="btn btn-secondary">Create a fake plan</div>
+                  <div className="btn btn-gray-800">Create a fake plan</div>
                 </HeaderLink>
                 <HeaderLink to="/coffees">
                   <Icon icon="coffee" className="mr-4" />
@@ -66,7 +66,7 @@ export default function () {
       <div className="flex-grow relative m-6 sm:m-10 lg:m-16 border-r border-b border-white mt-2 sm:mt-2 lg:mt-2">
         <div className="h-full text-white">
           <div className="h-full pt-0 sm:pt-10 lg:pt-16 pr-6 sm:pr-10 lg:pr-16 pb-6 sm:pb-10 lg:pb-16">
-            <div className="h-full flex bg-primary border-8 border-secondary shadow-none sm:shadow-xl">
+            <div className="h-full flex bg-primary border-8 border-gray-800shadow-none sm:shadow-xl">
               <div className="flex flex-col w-full h-full shadow-none sm:shadow-2xl">
                 <div className="relative p-6">
                   <div className="absolute top-0 right-0 p-6">
@@ -93,9 +93,9 @@ export default function () {
                   <div className="bg-primary-light transition ease-in-out duration-150 transform hover:scale-110" />
                   <div className="bg-primary transition ease-in-out duration-150 hover:shadow-lg" />
                   <div className="bg-primary-dark transition ease-in-out duration-150 transform hover:scale-110" />
-                  <div className="bg-secondary-light transition ease-in-out duration-150 transform hover:scale-110" />
-                  <div className="bg-secondary transition ease-in-out duration-150 transform hover:scale-110" />
-                  <div className="bg-secondary-dark transition ease-in-out duration-150 transform hover:scale-110" />
+                  <div className="bg-gray-700 transition ease-in-out duration-150 transform hover:scale-110" />
+                  <div className="bg-gray-800transition ease-in-out duration-150 transform hover:scale-110" />
+                  <div className="bg-gray-900 transition ease-in-out duration-150 transform hover:scale-110" />
                 </div>
               </div>
             </div>

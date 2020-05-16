@@ -5,7 +5,7 @@ const HeaderLink = ({
   to = "/",
   children,
   appendedClassNames = "",
-  color = "secondary",
+  color = "gray-800",
 }) => (
   <Link
     to={to}

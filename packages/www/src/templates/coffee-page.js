@@ -30,7 +30,7 @@ export default function CoffeePage({ data }) {
         <div className="flex min-h-screen bg-white">
           <aside className="hidden sm:block p-4 sm:mt-4">
             <HeaderLink>
-              <Icon icon="mug-hot" size="2x" className="text-secondary-light" />
+              <Icon icon="mug-hot" size="2x" className="text-gray-700" />
             </HeaderLink>
           </aside>
 
@@ -39,28 +39,24 @@ export default function CoffeePage({ data }) {
               <div className="w-1/3 sm:w-1/2 flex">
                 <div className="sm:hidden">
                   <HeaderLink>
-                    <Icon
-                      icon="mug-hot"
-                      size="2x"
-                      className="text-secondary-light"
-                    />
+                    <Icon icon="mug-hot" size="2x" className="text-gray-700" />
                   </HeaderLink>
                 </div>
                 <div className="sm:flex hidden w-1/2 items-center space-x-1">
-                  <Icon icon="map-marker" className="text-secondary-light" />
+                  <Icon icon="map-marker" className="text-gray-700" />
                   <span
-                    className="tracking-tight leading-3"
-                    style={{ fontSize: "0.6rem" }}
+                    className="tracking-tight leading-3 font-semibold"
+                    style={{ fontSize: "0.5rem" }}
                   >
                     Lorem ipsum dolor, sit amet, 74903-4
                   </span>
                 </div>
 
                 <div className="sm:flex hidden w-1/2 items-center space-x-1">
-                  <Icon icon="paper-plane" className="text-secondary-light" />
+                  <Icon icon="paper-plane" className="text-gray-700" />
                   <span
-                    className="text-xs tracking-tight leading-3"
-                    style={{ fontSize: "0.6rem" }}
+                    className="tracking-tight leading-3 font-semibold"
+                    style={{ fontSize: "0.5rem" }}
                   >
                     +63 999-999-999
                     <br />
@@ -76,21 +72,21 @@ export default function CoffeePage({ data }) {
                     class="form-input w-full block p-2 sm:text-sm sm:leading-5"
                   />
                   <div class="mr-2 absolute inset-y-0 right-0 flex items-center">
-                    <Icon icon="search" className="text-secondary-light" />
+                    <Icon icon="search" className="text-gray-700" />
                   </div>
                 </div>
               </div>
 
               <div className="w-1/3 flex sm:hidden justify-end items-center space-x-2">
                 <div className="pl-4 space-x-4 items-center flex">
-                  <Icon icon="portrait" className="text-secondary-light" />
+                  <Icon icon="portrait" className="text-gray-700" />
                   <HeaderButton
                   // onClick={() => toggleBurger(!burgerOpen)}
                   >
                     <Icon
                       icon="hamburger"
                       size="lg"
-                      className="text-secondary-light"
+                      className="text-gray-700"
                     />
                   </HeaderButton>
                 </div>
@@ -105,21 +101,21 @@ export default function CoffeePage({ data }) {
                       <Icon
                         icon={faGithub}
                         size="lg"
-                        className="text-secondary-light"
+                        className="text-gray-700"
                       />
                     </Hyperlink>
                     <Hyperlink href="https://www.linkedin.com/in/albertsmanuel/">
                       <Icon
                         icon={faLinkedin}
                         size="lg"
-                        className="text-secondary-light"
+                        className="text-gray-700"
                       />
                     </Hyperlink>
                     <Hyperlink href="mailto:albert.s.manuel@gmail.com">
                       <Icon
                         icon="envelope"
                         size="lg"
-                        className="text-secondary-light"
+                        className="text-gray-700"
                       />
                     </Hyperlink>
                   </div>
@@ -174,25 +170,13 @@ export default function CoffeePage({ data }) {
                   Built with Gatsby
                 </p>
                 <Hyperlink href="https://github.com/imalbert">
-                  <Icon
-                    icon={faGithub}
-                    size="lg"
-                    className="text-secondary-light"
-                  />
+                  <Icon icon={faGithub} size="lg" className="text-gray-700" />
                 </Hyperlink>
                 <Hyperlink href="https://www.linkedin.com/in/albertsmanuel/">
-                  <Icon
-                    icon={faLinkedin}
-                    size="lg"
-                    className="text-secondary-light"
-                  />
+                  <Icon icon={faLinkedin} size="lg" className="text-gray-700" />
                 </Hyperlink>
                 <Hyperlink href="mailto:albert.s.manuel@gmail.com">
-                  <Icon
-                    icon="envelope"
-                    size="lg"
-                    className="text-secondary-light"
-                  />
+                  <Icon icon="envelope" size="lg" className="text-gray-700" />
                 </Hyperlink>
               </section>
             </div>
