@@ -7,7 +7,7 @@ origin: "Kalinga, Philippines"
 grown: "Cordillera Growers"
 price: "$0"
 weight: "250g"
-img: "default-coffee-bag.png"
+img: "coffee-bag-2.png"
 desc: 'Kapeng barako (Spanish: café varraco or café verraco), also known as Barako coffee or Batangas coffee, is a coffee varietal grown in the Philippines, particularly in the provinces of Batangas and Cavite. It belongs to the species Coffea liberica. The term is also used to refer to all coffee coming from those provinces. Barako in the languages of the Philippines means "stud", and is associated with the image of masculinity. Barako has a strong flavor and fragrance reminiscent of aniseed.'
 ---
 
