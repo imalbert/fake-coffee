@@ -10,8 +10,17 @@ import Masthead2 from "../components/sections/masthead-2"
 import ProductCard from "../components/card/product-card"
 import Hyperlink from "../components/hyperlink"
 
+import Text from "../components/text"
+
 const IndexPage = () => (
   <HomeLayout>
+    <Text.h1 className="italic font-bold">Fake coffee imagine</Text.h1>
+    <Text.h2>Fake coffee imagine</Text.h2>
+    <Text.h3>Fake coffee imagine</Text.h3>
+    <Text.l1>Fake coffee imagine</Text.l1>
+    <Text.l2>Fake coffee imagine</Text.l2>
+    <Text.p1>Fake coffee imagine</Text.p1>
+    <Text.p2>Fake coffee imagine</Text.p2>
     <Masthead1 />
 
     <Section>
