@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => {
 				<div className="flex flex-col sm:flex-row container mx-auto">
 					<div className="sm:w-1/3 space-y-3 flex flex-col justify-center">
 						<Text.l2>Featured</Text.l2>
-						<Text.h2>Coffee</Text.h2>
+						<Text.h2 className="font-bold">Coffee</Text.h2>
 						<Text.l1 className="pt-1">
 							Full catalog <FontAwesomeIcon icon="chevron-right" />
 						</Text.l1>

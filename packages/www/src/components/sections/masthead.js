@@ -33,8 +33,8 @@ const Masthead = () => {
 
 			<div className="flex flex-grow">
 				<div className="grid grid-cols-1 sm:grid-cols-2 w-full">
-					<div className="space-y-4 flex flex-col justify-center text-center sm:text-right">
-						<div className="flex justify-center sm:justify-end space-x-4 text-white">
+					<div className="flex flex-col justify-center text-center sm:text-right">
+						<div className="py-2 space-x-4 flex justify-center sm:justify-end text-white">
 							<Hyperlink href="https://github.com/imalbert" target="_blank">
 								<FontAwesomeIcon icon={faGithub} />
 							</Hyperlink>
@@ -46,14 +46,16 @@ const Masthead = () => {
 							</Hyperlink>
 						</div>
 
-						<p className="font-bold tracking-tighter leading-none">
+						<p className="space-y-2">
 							<Text.h2 className="text-white">
 								I don't need an<br />inspirational quote.
 							</Text.h2>
-							<Text.h1>I need coffee.</Text.h1>
+							<Text.h1>
+								I <i>need</i> <u>coffee</u>.
+							</Text.h1>
 						</p>
 
-						<div className="flex justify-center sm:justify-end items-center">
+						<div className="pb-4 pt-6 flex justify-center sm:justify-end items-center">
 							<ButtonOutline>
 								<Text.l1 className="">Get Coffee</Text.l1>
 							</ButtonOutline>
