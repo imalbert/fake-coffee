@@ -4,56 +4,59 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import Header from '../header/header-old';
 import Hyperlink from '../hyperlink';
+import Text from '../text';
 
 const masthead1 = () => (
-	<div className="flex flex-col min-h-screen bg-primary">
+	<div className="flex flex-col bg-primary">
 		<Header />
-		<div className="flex-grow grid grid-cols-1 lg:grid-cols-3 p-6 mt-0 m-6 border-8 border-primary-light">
-			<div className="text-white p-6 hidden lg:flex flex-col justify-between">
+		<div className="flex-grow grid grid-cols-1 lg:grid-cols-3 sm:p-6 mt-0 sm:m-6 sm:border-8 border-primary-light">
+			<div className="p-6 space-y-10 hidden lg:flex flex-col justify-between">
 				<div>
-					<h1 className="text-6xl uppercase font-bold tracking-tighter leading-none">Fake</h1>
-					<h1 className="text-6xl uppercase font-bold tracking-tighter leading-10">Coffee</h1>
-					<h1 className="text-6xl uppercase font-bold tracking-tighter leading-none">Imagine</h1>
+					<Text.h1 className="text-white uppercase">Fake</Text.h1>
+					<Text.h1 className="text-white uppercase">Coffee</Text.h1>
 				</div>
-				<div className="flex flex-col items-start space-y-6 text-white">
+				<div className="flex flex-col items-start space-y-4 text-white">
 					<Hyperlink href="https://github.com/imalbert">
-						<FontAwesomeIcon icon={faGithub} />
+						<FontAwesomeIcon size="lg" icon={faGithub} />
 					</Hyperlink>
 					<Hyperlink href="https://www.linkedin.com/in/albertsmanuel/">
-						<FontAwesomeIcon icon={faLinkedin} />
+						<FontAwesomeIcon size="lg" icon={faLinkedin} />
 					</Hyperlink>
 					<Hyperlink href="mailto:albert.s.manuel@gmail.com">
-						<FontAwesomeIcon icon="envelope" />
+						<FontAwesomeIcon size="lg" icon="envelope" />
 					</Hyperlink>
 				</div>
-				<div className="text-primary-light">
-					<h1 className="text-5xl font-bold leading-9">20</h1>
-					<h1 className="text-5xl font-bold leading-10">20</h1>
+				<div>
+					<Text.h2 className="text-primary-light">20</Text.h2>
+					<Text.h2 className="text-primary-light">20</Text.h2>
 				</div>
 			</div>
-			<div className="items-center flex relative">
-				<div className="absolute top-0 left-0 right-0 space-x-6 text-center text-white">
+
+			<div className="relative lg:items-center justify-center flex flex-col">
+				<div className="px-6 lg:absolute text-left lg:text-center top-0 left-0 right-0 space-x-6 sm:text-white">
 					<Hyperlink href="https://github.com/imalbert">
-						<FontAwesomeIcon icon={faGithub} />
+						<FontAwesomeIcon size="lg" icon={faGithub} />
 					</Hyperlink>
 					<Hyperlink href="https://www.linkedin.com/in/albertsmanuel/">
-						<FontAwesomeIcon icon={faLinkedin} />
+						<FontAwesomeIcon size="lg" icon={faLinkedin} />
 					</Hyperlink>
 					<Hyperlink href="mailto:albert.s.manuel@gmail.com">
-						<FontAwesomeIcon icon="envelope" />
+						<FontAwesomeIcon size="lg" icon="envelope" />
 					</Hyperlink>
 				</div>
+
 				<div className="w-full">
-					<div className="bg-primary border-8 border-gray-800shadow-xl text-gray-800">
-						<div className="flex flex-col w-full shadow-2xl">
+					<div className="bg-primary sm:border-8 border-gray-900 sm:shadow-xl">
+						<div className="flex flex-col w-full sm:shadow-2xl">
 							<div className="relative p-6">
 								<div className="absolute top-0 right-0 p-6">
-									<h1 className="text-5xl font-bold leading-9">20</h1>
-									<h1 className="text-5xl font-bold leading-10">20</h1>
+									<Text.h2 className="text-primary-light">20</Text.h2>
+									<Text.h2 className="text-primary-light">20</Text.h2>
 								</div>
-								<h1 className="text-6xl uppercase font-bold tracking-tighter leading-none">Fake</h1>
-								<h1 className="text-6xl uppercase font-bold tracking-tighter leading-10">Coffee</h1>
-								<h1 className="text-6xl uppercase font-bold tracking-tighter leading-none">Imagine</h1>
+
+								<Text.h1 className="uppercase">Fake</Text.h1>
+								<Text.h1 className="uppercase">Coffee</Text.h1>
+
 								<p className="ml-1 mt-4 uppercase text-xs leading-tight">
 									Best, made-up coffees.
 									<br />
@@ -66,44 +69,44 @@ const masthead1 = () => (
 								<div className="bg-primary transition ease-in-out duration-150 hover:shadow-lg" />
 								<div className="bg-primary-dark transition ease-in-out duration-150 transform hover:scale-110" />
 								<div className="bg-gray-700 transition ease-in-out duration-150 transform hover:scale-110" />
-								<div className="bg-gray-800transition ease-in-out duration-150 transform hover:scale-110" />
+								<div className="bg-gray-800 transition ease-in-out duration-150 transform hover:scale-110" />
 								<div className="bg-gray-900 transition ease-in-out duration-150 transform hover:scale-110" />
 							</div>
 						</div>
 					</div>
-					<div className="absolute bottom-0 left-0 right-0 space-x-6 text-center text-primary-light">
+
+					<div className="hidden lg:block text-left lg:text-center absolute bottom-0 left-0 right-0 space-x-4 text-primary-light">
 						<Hyperlink href="https://github.com/imalbert" target="_blank">
-							<FontAwesomeIcon icon={faGithub} />
+							<FontAwesomeIcon size="lg" icon={faGithub} />
 						</Hyperlink>
 						<Hyperlink href="https://www.linkedin.com/in/albertsmanuel/">
-							<FontAwesomeIcon icon={faLinkedin} />
+							<FontAwesomeIcon size="lg" icon={faLinkedin} />
 						</Hyperlink>
 						<Hyperlink href="mailto:albert.s.manuel@gmail.com">
-							<FontAwesomeIcon icon="envelope" />
+							<FontAwesomeIcon size="lg" icon="envelope" />
 						</Hyperlink>
 					</div>
 				</div>
 			</div>
 			<div className="text-right p-6 hidden lg:flex flex-col justify-between">
-				<div className="text-white">
-					<h1 className="text-5xl font-bold leading-9">20</h1>
-					<h1 className="text-5xl font-bold leading-10">20</h1>
+				<div>
+					<Text.h2 className="text-white">20</Text.h2>
+					<Text.h2 className="text-white">20</Text.h2>
 				</div>
-				<div className="flex flex-col items-end space-y-6 text-primary-light">
-					<Hyperlink href="https://github.com/imalbert" target="_blank">
-						<FontAwesomeIcon icon={faGithub} />
+				<div className="flex flex-col items-end space-y-4 text-primary-light">
+					<Hyperlink href="https://github.com/imalbert">
+						<FontAwesomeIcon size="lg" icon={faGithub} />
 					</Hyperlink>
 					<Hyperlink href="https://www.linkedin.com/in/albertsmanuel/">
-						<FontAwesomeIcon icon={faLinkedin} />
+						<FontAwesomeIcon size="lg" icon={faLinkedin} />
 					</Hyperlink>
 					<Hyperlink href="mailto:albert.s.manuel@gmail.com">
-						<FontAwesomeIcon icon="envelope" />
+						<FontAwesomeIcon size="lg" icon="envelope" />
 					</Hyperlink>
 				</div>
-				<div className="text-primary-light">
-					<h1 className="text-6xl uppercase font-bold tracking-tighter leading-none">Fake</h1>
-					<h1 className="text-6xl uppercase font-bold tracking-tighter leading-10">Coffee</h1>
-					<h1 className="text-6xl uppercase font-bold tracking-tighter leading-none">Imagine</h1>
+				<div>
+					<Text.h1 className="text-primary-light uppercase">Fake</Text.h1>
+					<Text.h1 className="text-primary-light uppercase">Coffee</Text.h1>
 				</div>
 			</div>
 		</div>
