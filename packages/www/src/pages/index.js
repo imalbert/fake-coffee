@@ -1,9 +1,10 @@
 import React from 'react';
+import Img from 'gatsby-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import HomeLayout from '../components/layout/home-layout';
 import Card from '../components/card/card';
-import Section from '../components/section';
+import Section from '../components/sections/section';
 // import SEO from "../components/seo"
 import Masthead1 from '../components/sections/masthead-1';
 import Masthead2 from '../components/sections/masthead-2';
@@ -12,6 +13,7 @@ import Icon from '../components/icon/icon';
 import Hyperlink from '../components/hyperlink';
 
 import Text from '../components/text';
+import Button from '../components/button';
 // import CoffeeImage from '../components/image/coffee-image';
 
 const IndexPage = ({ data }) => {
@@ -19,6 +21,8 @@ const IndexPage = ({ data }) => {
 		...node.frontmatter,
 		slug: node.fields.slug
 	}));
+	const newsSectionImgFluid = data.allImageSharp.edges[0].node.fluid;
+	const planSectionImgFluid = data.allImageSharp.edges[1].node.fluid;
 
 	return (
 		<HomeLayout>
@@ -36,6 +40,38 @@ const IndexPage = ({ data }) => {
 					</div>
 				</div>
 			</Section>
+
+			<Section>
+				<div className="relative">
+					<Img className="h-64" alt={'Coffee beans on background'} fluid={planSectionImgFluid} />
+					<div className="absolute inset-0">
+						<div className="text-white flex justify-center h-full">
+							<div className="hidden sm:flex" />
+							<div className="space-y-3 w-full sm:w-1/2 flex flex-col items-center justify-center">
+								<Text.l2>Subscribe</Text.l2>
+								<p>
+									<Text.h2>What goes best with a cup of coffee?</Text.h2>
+									<Text.h1>Another cup.</Text.h1>
+								</p>
+								<Button.Outline>
+									<Text.l1>Set a Coffee Plan</Text.l1>
+								</Button.Outline>
+							</div>
+							<div className="hidden sm:flex" />
+						</div>
+					</div>
+				</div>
+			</Section>
+
+			{/* <Section>
+				<div className="container mx-auto">
+					<div className="">
+						<figure className="">
+							<Img objectFit="contain" fluid={newsSectionImgFluid} alt="I need Coffee" />
+						</figure>
+					</div>
+				</div>
+			</Section> */}
 
 			<Section>
 				<div className="container mx-auto">
@@ -198,6 +234,15 @@ export const query = graphql`
 					}
 					fields {
 						slug
+					}
+				}
+			}
+		}
+		allImageSharp(filter: { fluid: { src: { regex: "/coffee-bean-1.png|coffee-desktop.jpg/" } } }) {
+			edges {
+				node {
+					fluid(srcSetBreakpoints: [400, 600, 800, 1200, 1600]) {
+						...GatsbyImageSharpFluid
 					}
 				}
 			}

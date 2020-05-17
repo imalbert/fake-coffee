@@ -7,12 +7,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Header from '../header';
 import Text from '../text';
 import Hyperlink from '../hyperlink';
-
-const ButtonOutline = ({ children }) => (
-	<button type="button" className="text-white border-white border p-2 px-8">
-		{children}
-	</button>
-);
+import Button from '../button';
 
 const Masthead = () => {
 	const data = useStaticQuery(graphql`
@@ -56,9 +51,9 @@ const Masthead = () => {
 						</p>
 
 						<div className="pb-4 pt-6 flex justify-center sm:justify-end items-center">
-							<ButtonOutline>
+							<Button.Outline>
 								<Text.l1 className="">Get Coffee</Text.l1>
-							</ButtonOutline>
+							</Button.Outline>
 						</div>
 					</div>
 
