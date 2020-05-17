@@ -19,18 +19,9 @@ const IndexPage = ({ data }) => {
 		...node.frontmatter,
 		slug: node.fields.slug
 	}));
-	console.log('coffees', coffees);
+
 	return (
 		<HomeLayout>
-			{/* <Text.h1>Fake coffee imagine</Text.h1>
-			<Text.h2>Fake coffee imagine</Text.h2>
-			<Text.h3>Fake coffee imagine</Text.h3>
-			<Text.l1>Fake coffee imagine</Text.l1>
-			<Text.l2>Fake coffee imagine</Text.l2>
-			<Text.p1>Fake coffee imagine</Text.p1>
-			<Text.p2>Fake coffee imagine</Text.p2> */}
-			<Masthead1 />
-
 			<Section>
 				<div className="flex flex-col sm:flex-row container mx-auto">
 					<div className="sm:w-1/3 space-y-3 flex flex-col justify-center">
@@ -183,6 +174,7 @@ const IndexPage = ({ data }) => {
 				</div>
 			</Section>
 
+			<Masthead1 />
 			<Masthead2 />
 		</HomeLayout>
 	);

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-import { HeaderLg, HeaderSm } from '../header/header';
+import { HeaderLg, HeaderSm } from '../header/header-old';
 import Hyperlink from '../hyperlink';
 import HeaderLink from '../header/header-link';
 import HeaderButton from '../header/header-button';

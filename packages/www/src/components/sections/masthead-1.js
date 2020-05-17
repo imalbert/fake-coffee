@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-import Header from '../header/header';
+import Header from '../header/header-old';
 import Hyperlink from '../hyperlink';
 
 const masthead1 = () => (
