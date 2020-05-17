@@ -28,10 +28,10 @@ const Masthead = () => {
 	`);
 
 	return (
-		<div className="p-4 min-h-screen flex flex-col container mx-auto">
+		<div className="p-4 flex flex-col container mx-auto">
 			<Header />
 
-			<div className="flex flex-grow">
+			<div className="sm:p-4 flex flex-grow">
 				<div className="grid grid-cols-1 sm:grid-cols-2 w-full">
 					<div className="flex flex-col justify-center text-center sm:text-right">
 						<div className="py-2 space-x-4 flex justify-center sm:justify-end text-white">
@@ -62,7 +62,7 @@ const Masthead = () => {
 						</div>
 					</div>
 
-					<div className="h-48 w-64 mx-auto sm:h-auto sm:w-auto flex items-center justify-start">
+					<div className="h-48 w-64 mx-auto sm:mx-0 sm:h-auto sm:w-auto flex items-center justify-start">
 						<Img
 							imgStyle={{ objectFit: 'contain' }}
 							fixed={data.file.childImageSharp.fixed}
