@@ -21,8 +21,8 @@ const IndexPage = ({ data }) => {
 		...node.frontmatter,
 		slug: node.fields.slug
 	}));
-	const newsSectionImgFluid = data.allImageSharp.edges[0].node.fluid;
-	const planSectionImgFluid = data.allImageSharp.edges[1].node.fluid;
+	const planSectionImgFluid = data.allImageSharp.edges[0].node.fluid;
+	const newsSectionImgFluid = data.allImageSharp.edges[1].node.fluid;
 
 	return (
 		<HomeLayout>
@@ -43,7 +43,7 @@ const IndexPage = ({ data }) => {
 
 			<Section>
 				<div className="relative">
-					<Img style={{ height: '28rem' }} alt={'Coffee beans on background'} fluid={planSectionImgFluid} />
+					<Img style={{ height: '32rem' }} alt={'Top view of a desk'} fluid={planSectionImgFluid} />
 					<div className="absolute inset-0">
 						<div className="space-y-8 text-center bg-gray-300 bg-opacity-50 h-full flex flex-col items-center justify-center">
 							<Text.l2 className="text-white">Subscribe</Text.l2>
@@ -56,6 +56,57 @@ const IndexPage = ({ data }) => {
 							<Button.Outline>
 								<Text.l1 className="text-white">Set a Coffee Plan</Text.l1>
 							</Button.Outline>
+						</div>
+					</div>
+				</div>
+			</Section>
+
+			<Section>
+				<div className="relative">
+					<Img
+						className="w-full sm:w-2/3"
+						style={{ height: '32rem' }}
+						alt={'Coffee beans on background'}
+						fluid={newsSectionImgFluid}
+					/>
+					<div className="absolute inset-0 h-full sm:h-auto flex bg-gray-300 bg-opacity-50 h-full">
+						{/* background */}
+						<div className="p-3 sm:py-16 sm:h-auto h-full flex flex-col items-end justify-center container mx-auto">
+							{/* box placement in background */}
+							<div className="w-full sm:w-1/2 sm:h-auto space-y-4 bg-white text-left">
+								{/* box-content */}
+
+								<div className="px-6 sm:px-12 pt-6 sm:pt-12 flex justify-between">
+									<Text.l2>News</Text.l2>
+									<Text.l2 className="font-bold">18.05.2020</Text.l2>
+								</div>
+
+								<div className="flex items-center">
+									<div className="w-6 sm:w-12 flex items-center justify-center">
+										<Icon icon="long-arrow-alt-left" />
+									</div>
+									<div className="flex-grow">
+										<Text.h2 className="w-full sm:w-3/4">Happy International Coffee Day!</Text.h2>
+									</div>
+									<div className="w-6 sm:w-12 flex items-center justify-center">
+										<Icon icon="long-arrow-alt-right" />
+									</div>
+								</div>
+
+								<div className="px-6 sm:px-12 flex flex-col">
+									<Text.p1>
+										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+										eget Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+										ligula eget dolor. Aenean massa.
+									</Text.p1>
+								</div>
+
+								<div className="px-6 sm:px-12 pb-6 sm:pb-12 flex flex-col">
+									<Text.l1 className="pt-1">
+										Show more <FontAwesomeIcon icon="chevron-right" />
+									</Text.l1>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -236,7 +287,7 @@ export const query = graphql`
 				}
 			}
 		}
-		allImageSharp(filter: { fluid: { src: { regex: "/coffee-bean-1.png|coffee-desktop.jpg/" } } }) {
+		allImageSharp(filter: { fluid: { src: { regex: "/coffee-with-sunrise.jpg|coffee-desktop.jpg/" } } }) {
 			edges {
 				node {
 					fluid(srcSetBreakpoints: [400, 600, 800, 1200, 1600]) {
