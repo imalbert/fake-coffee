@@ -9,7 +9,7 @@ const ProductCard = ({ img, title, price, slug }) => (
 		<Img className="mx-auto" alt={title} fluid={img.childImageSharp.fluid} />
 		<Link
 			to={slug}
-			className="p-4 opacity-0 hover:opacity-75 transition duration-150 bg-gray-100 flex flex-col justify-center items-center absolute inset-0"
+			className="p-4 opacity-0 hover:opacity-50 transition duration-150 bg-gray-300 flex flex-col justify-center items-center absolute inset-0"
 		>
 			<Text.l2 className="font-bold">{title}</Text.l2>
 			<Text.l2 className="font-bold">{price}</Text.l2>

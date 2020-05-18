@@ -27,10 +27,10 @@ const IndexPage = ({ data }) => {
 	return (
 		<HomeLayout>
 			<Section>
-				<div className="flex flex-col sm:flex-row container mx-auto">
-					<div className="sm:w-1/3 space-y-3 flex flex-col justify-center">
+				<div className="py-8 flex flex-col sm:flex-row container mx-auto">
+					<div className="sm:w-1/3 p-2 py-4 text-center sm:text-left flex flex-col justify-around">
 						<Text.l2>Featured</Text.l2>
-						<Text.h2 className="font-bold">Coffee</Text.h2>
+						<Text.h1 className="font-bold">Coffee</Text.h1>
 						<Text.l1 className="pt-1">
 							Full catalog <FontAwesomeIcon icon="chevron-right" />
 						</Text.l1>
@@ -43,21 +43,19 @@ const IndexPage = ({ data }) => {
 
 			<Section>
 				<div className="relative">
-					<Img className="h-64" alt={'Coffee beans on background'} fluid={planSectionImgFluid} />
+					<Img style={{ height: '28rem' }} alt={'Coffee beans on background'} fluid={planSectionImgFluid} />
 					<div className="absolute inset-0">
-						<div className="text-white flex justify-center h-full">
-							<div className="hidden sm:flex" />
-							<div className="space-y-3 w-full sm:w-1/2 flex flex-col items-center justify-center">
-								<Text.l2>Subscribe</Text.l2>
-								<p>
-									<Text.h2>What goes best with a cup of coffee?</Text.h2>
-									<Text.h1>Another cup.</Text.h1>
-								</p>
-								<Button.Outline>
-									<Text.l1>Set a Coffee Plan</Text.l1>
-								</Button.Outline>
+						<div className="space-y-8 text-center bg-gray-300 bg-opacity-50 h-full flex flex-col items-center justify-center">
+							<Text.l2 className="text-white">Subscribe</Text.l2>
+							<div>
+								<Text.h2 className="text-white">What goes best with a cup of coffee?</Text.h2>
+								<Text.h1>
+									<span className="underline">Another cup</span>.
+								</Text.h1>
 							</div>
-							<div className="hidden sm:flex" />
+							<Button.Outline>
+								<Text.l1 className="text-white">Set a Coffee Plan</Text.l1>
+							</Button.Outline>
 						</div>
 					</div>
 				</div>

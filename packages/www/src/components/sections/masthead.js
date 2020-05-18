@@ -26,7 +26,7 @@ const Masthead = () => {
 		<div className="p-4 flex flex-col container mx-auto">
 			<Header />
 
-			<div className="py-8 sm:px-4 flex flex-grow">
+			<div className="py-16 sm:px-4 flex flex-grow">
 				<div className="grid grid-cols-1 sm:grid-cols-2 w-full">
 					<div className="flex flex-col justify-center text-center sm:text-right">
 						<div className="py-2 space-x-4 flex justify-center sm:justify-end text-white">
@@ -41,14 +41,14 @@ const Masthead = () => {
 							</Hyperlink>
 						</div>
 
-						<p className="space-y-2">
+						<div className="space-y-2">
 							<Text.h2 className="text-white">
 								I don't need an<br />inspirational quote.
 							</Text.h2>
 							<Text.h1>
 								I <i>need</i> <u>coffee</u>.
 							</Text.h1>
-						</p>
+						</div>
 
 						<div className="pb-4 pt-6 flex justify-center sm:justify-end items-center">
 							<Button.Outline>
@@ -57,7 +57,7 @@ const Masthead = () => {
 						</div>
 					</div>
 
-					<div className="w-full mx-auto sm:mx-0 sm:h-auto sm:w-auto flex items-center justify-start">
+					<div className="w-full mx-auto sm:mx-0 sm:h-auto sm:w-auto flex items-center justify-center sm:justify-start">
 						<Img
 							imgStyle={{ objectFit: 'contain' }}
 							fixed={data.file.childImageSharp.fixed}
