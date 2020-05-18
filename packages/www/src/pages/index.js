@@ -27,10 +27,12 @@ const IndexPage = ({ data }) => {
 	return (
 		<HomeLayout>
 			<Section>
-				<div className="py-8 flex flex-col sm:flex-row container mx-auto">
+				<div className="py-12 flex flex-col sm:flex-row container mx-auto">
 					<div className="sm:w-1/3 p-2 py-4 text-center sm:text-left flex flex-col justify-around">
 						<Text.l2>Featured</Text.l2>
-						<Text.h1 className="font-bold">Coffee</Text.h1>
+						<Text.h2 className="font-bold">
+							So much<br />coffee
+						</Text.h2>
 						<Text.l1 className="pt-1">
 							Full catalog <FontAwesomeIcon icon="chevron-right" />
 						</Text.l1>
@@ -62,6 +64,37 @@ const IndexPage = ({ data }) => {
 			</Section>
 
 			<Section>
+				<div className="py-12 flex flex-col sm:flex-row container mx-auto">
+					<div className="sm:w-1/3 p-2 py-4 text-center sm:text-left flex flex-col justify-around">
+						<Text.l2>Reviews</Text.l2>
+						<Text.h2 className="font-bold">
+							The best<br /> clients
+						</Text.h2>
+						<div className="pt-1 space-x-2 flex justify-center sm:justify-start">
+							<Button.RoundIcon>
+								<Icon icon="long-arrow-alt-left" size="xs" />
+							</Button.RoundIcon>
+							<Button.RoundIcon>
+								<Icon icon="long-arrow-alt-right" size="xs" />
+							</Button.RoundIcon>
+						</div>
+					</div>
+					<div className="sm:w-2/3">
+						<div className="grid grid-cols-1 sm:grid-cols-3 h-full">
+							<div className="p-6 flex flex-col justify-center items-center bg-gray-200">
+								<img
+									className="rounded-full w-12"
+									src="https://avatars3.githubusercontent.com/u/12537973?s=460&u=a0d58e799f8b4dc9098f8144156ce34393d54a0f&v=4"
+								/>
+								<Text.h3>Albert M</Text.h3>
+								<Text.p1>Where's my coffee?</Text.p1>
+							</div>
+						</div>
+					</div>
+				</div>
+			</Section>
+
+			<Section>
 				<div className="relative">
 					<Img
 						className="w-full sm:w-2/3"
@@ -69,11 +102,11 @@ const IndexPage = ({ data }) => {
 						alt={'Coffee beans on background'}
 						fluid={newsSectionImgFluid}
 					/>
-					<div className="absolute inset-0 h-full sm:h-auto flex bg-gray-300 bg-opacity-50 h-full">
+					<div className="absolute inset-0 h-full sm:h-auto flex bg-gray-100 bg-opacity-50 h-full">
 						{/* background */}
 						<div className="p-3 sm:py-16 sm:h-auto h-full flex flex-col items-end justify-center container mx-auto">
 							{/* box placement in background */}
-							<div className="w-full sm:w-1/2 sm:h-auto space-y-4 bg-white text-left">
+							<div className="w-full sm:w-1/2 sm:h-auto space-y-4 bg-gray-100 text-left">
 								{/* box-content */}
 
 								<div className="px-6 sm:px-12 pt-6 sm:pt-12 flex justify-between">
