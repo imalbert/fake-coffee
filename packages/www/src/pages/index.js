@@ -1,21 +1,18 @@
 import React from 'react';
 import Img from 'gatsby-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import BackgroundImage from 'gatsby-background-image-es5';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import HomeLayout from '../components/layout/home-layout';
-import Card from '../components/card/card';
 import Section from '../components/sections/section';
 // import SEO from "../components/seo"
 import Masthead1 from '../components/sections/masthead-1';
-import Masthead2 from '../components/sections/masthead-2';
 import CoffeeShowcase from '../components/sections/coffee-showcase';
 import Icon from '../components/icon/icon';
 import Hyperlink from '../components/hyperlink';
 
 import Text from '../components/text';
 import Button from '../components/button';
-// import CoffeeImage from '../components/image/coffee-image';
 
 const IndexPage = ({ data }) => {
 	const coffees = data.allMarkdownRemark.edges.map(({ node }) => ({
