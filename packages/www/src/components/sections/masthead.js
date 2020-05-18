@@ -52,7 +52,7 @@ const Masthead = () => {
 
 						<div className="pb-4 pt-6 flex justify-center sm:justify-end items-center">
 							<Button.Outline>
-								<Text.l1 className="">Get Coffee</Text.l1>
+								<Text.l1 className="uppercase">Get Coffee</Text.l1>
 							</Button.Outline>
 						</div>
 					</div>

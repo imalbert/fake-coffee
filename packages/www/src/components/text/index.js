@@ -19,8 +19,8 @@ export default {
 	h3: ({ children, className = '' }) => (
 		<P cls={`text-1xl sm:text-2xl font-bold tracking-tighter leading-none ${className}`}>{children}</P>
 	),
-	l1: ({ children, className = '' }) => <P cls={`font-extrabold uppercase text-sm ${className}`}>{children}</P>,
-	l2: ({ children, className = '' }) => <P cls={`font-bold text-sm ${className}`}>{children}</P>,
+	l1: ({ children, className = '' }) => <P cls={`text-sm ${className}`}>{children}</P>,
+	l2: ({ children, className = '' }) => <P cls={`text-sm ${className}`}>{children}</P>,
 	p1: ({ children, className = '' }) => <P cls={`text-sm ${className}`}>{children}</P>,
 	p2: ({ children, className = '' }) => <P cls={`text-xs ${className}`}>{children}</P>
 };

@@ -9,8 +9,10 @@ const types = {
 	round: 'rounded-full'
 };
 
-const Outline = ({ children }) => (
-	<Button className={[ types.outlineWhite, types.padding ].join(' ')}>{children}</Button>
+const Outline = ({ children, inverse }) => (
+	<Button className={[ inverse ? types.outlineBlack : types.outlineWhite, types.padding ].join(' ')}>
+		{children}
+	</Button>
 );
 const RoundIcon = ({ children }) => (
 	<Button className={[ types.outlineBlack, types.icon, types.round ].join(' ')}>{children}</Button>
