@@ -125,7 +125,7 @@ const IndexPage = ({ data }) => {
       <Section>
         <div className="relative">
           <Img
-            style={{ height: "32rem" }}
+            style={{ height: "28rem" }}
             alt={"Top view of a desk"}
             fluid={planSectionImgFluid}
           />
@@ -151,16 +151,96 @@ const IndexPage = ({ data }) => {
       </Section>
 
       <Section>
-        <div className="relative">
+        <div className="relative my-12">
           <Img
-            className="absolute inset-0 w-full sm:w-3/4 sm:mt-0 sm:ml-0 sm:mb-0 sm:mr-auto hidden sm:block"
-            style={{ height: "32rem", margin: "0 0 0 auto" }}
+            className="absolute inset-0 hidden sm:block w-full sm:w-3/4 hidden sm:block"
+            style={{ height: "28rem", margin: "0 0 0 auto" }}
             alt={"Coffee beans on background"}
             fluid={contactSectionImgFluid}
           />
-          <div className="sm:absolute inset-0 bg-gray-100 bg-opacity-25">
+          <div className="sm:absolute inset-0">
+            <div className="h-full container mx-auto flex flex-col">
+              <div className="h-full flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                <div className="h-full w-full sm:w-56 bg-gray-100 flex flex-col justify-center items-start pr-8 space-y-4">
+                  <Text.l2 className="text-gray-600">Contacts</Text.l2>
+                  <Text.h2 className="pb-2 sm:w-2/3">
+                    Let's get acquainted
+                  </Text.h2>
+                  <dl className="mt-2">
+                    <dt className="my-2">
+                      <Text.dt>Linkedin</Text.dt>
+                    </dt>
+                    <dd>
+                      <Text.dd>
+                        <Hyperlink href="https://linkedin.com/in/albertsmanuel">
+                          https://linkedin.com/in/albertsmanuel
+                        </Hyperlink>
+                      </Text.dd>
+                    </dd>
+                  </dl>
+
+                  <dl className="mt-2">
+                    <dt className="my-2">
+                      <Text.dt>E-mail</Text.dt>
+                    </dt>
+                    <dd>
+                      <Text.dd>albert.s.manuel@gmail.com</Text.dd>
+                    </dd>
+                  </dl>
+
+                  <dl className="mt-2">
+                    <dt className="my-2">
+                      <Text.dt>GitHub</Text.dt>
+                    </dt>
+                    <dd>
+                      <Text.dd>
+                        <Hyperlink href="https://github.com/imalbert">
+                          https://github.com/imalbert
+                        </Hyperlink>
+                      </Text.dd>
+                    </dd>
+                  </dl>
+                </div>
+
+                <div className="py-6 sm:py-12 px-0 sm:px-6 space-y-3 bg-gray-100 w-full sm:w-auto flex flex-col justify-center">
+                  <Text.h3 className="font-bold uppercase">Contact us</Text.h3>
+                  <input
+                    id="contactus-name"
+                    className="appearance-none sm:w-auto bg-gray-100 border-b-2 p-2 text-sm font-bold"
+                    placeholder="Name"
+                  />
+                  <input
+                    id="contactus-phone"
+                    className="appearance-none sm:w-auto bg-gray-100 border-b-2 p-2 text-sm font-bold"
+                    placeholder="Phone"
+                  />
+                  <textarea
+                    id="contactus-message"
+                    rows="3"
+                    className="form-textarea appearance-none sm:w-auto bg-gray-100 border-b-2 p-2 text-sm font-bold"
+                    placeholder="Message"
+                  />
+                  <Button.Outline icon="chevron-right">
+                    Send Message
+                  </Button.Outline>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+      {/*
+      <Section>
+        <div className="relative py-12">
+          <Img
+            className="absolute inset-0 w-full sm:w-2/3 sm:mt-0 sm:ml-0 sm:mb-0 sm:mr-auto hidden sm:block"
+            style={{ margin: "0 0 0 auto" }}
+            alt={"Coffee beans on background"}
+            fluid={contactSectionImgFluid}
+          />
+          <div className="sm:absolute inset-0">
             <div className="flex flex-col sm:flex-row justify-between items-center container mx-auto h-full">
-              <div className="pl-2 py-4 sm:pr-8 space-y-4 bg-gray-100 sm:text-left w-full sm:w-auto flex flex-col">
+              <div className="pl-2 py-4 sm:pr-8 space-y-4 bg-gray-100 sm:text-left flex flex-col">
                 <Text.l2 className="text-gray-600">Contacts</Text.l2>
                 <Text.h2 className="pb-2 sm:w-2/3">
                   Let's get acquainted
@@ -212,7 +292,7 @@ const IndexPage = ({ data }) => {
             </div>
           </div>
         </div>
-      </Section>
+      </Section> */}
 
       <Masthead1 />
     </HomeLayout>
