@@ -5,7 +5,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import HomeLayout from '../components/layout/home-layout';
 import Section from '../components/sections/section';
-// import SEO from "../components/seo"
+import SEO from '../components/seo';
 import Masthead1 from '../components/sections/masthead-1';
 import CoffeeShowcase from '../components/sections/coffee-showcase';
 import Icon from '../components/icon/icon';
@@ -25,6 +25,7 @@ const IndexPage = ({ data }) => {
 
 	return (
 		<HomeLayout>
+			<SEO />
 			<Section>
 				<div className="py-12 flex flex-col sm:flex-row container mx-auto">
 					<div className="sm:w-1/3 p-2 py-4 space-y-4 text-center sm:text-left flex flex-col justify-center">
