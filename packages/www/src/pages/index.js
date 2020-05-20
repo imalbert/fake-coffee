@@ -9,10 +9,10 @@ import SEO from "../components/seo"
 import Masthead1 from "../components/sections/masthead-1"
 import CoffeeShowcase from "../components/sections/coffee-showcase"
 import Icon from "../components/icon/icon"
-import Hyperlink from "../components/hyperlink"
 
 import Text from "../components/text"
 import Button from "../components/button"
+import Hyperlink from "../components/hyperlink"
 
 const IndexPage = ({ data }) => {
   const coffees = data.allMarkdownRemark.edges.map(({ node }) => ({
@@ -105,14 +105,18 @@ const IndexPage = ({ data }) => {
           </div>
           <div className="sm:w-2/3">
             <div className="grid grid-cols-1 sm:grid-cols-3 h-full">
-              <div className="p-6 flex flex-col justify-center items-center bg-gray-200">
+              <Hyperlink
+                href="https://github.com/imalbert"
+                target="_blank"
+                className="p-6 px-2 space-y-2 flex flex-col justify-center items-center bg-gray-200"
+              >
                 <img
                   className="rounded-full w-12"
                   src="https://avatars3.githubusercontent.com/u/12537973?s=460&u=a0d58e799f8b4dc9098f8144156ce34393d54a0f&v=4"
                 />
-                <Text.h3>Albert M</Text.h3>
-                <Text.p1>Where's my coffee?</Text.p1>
-              </div>
+                <Text.h3>Albert M.</Text.h3>
+                <Text.p1 className="text-center">Where's my coffee?</Text.p1>
+              </Hyperlink>
             </div>
           </div>
         </div>
