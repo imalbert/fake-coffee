@@ -20,16 +20,7 @@ module.exports = {
 				default: '#fcb001',
 				dark: '#c48100'
 			},
-			gray: {
-				'100': '#F7FAFC',
-				'200': '#EDF2F7',
-				'300': '#E2E8F0',
-				'400': '#CBD5E0',
-				'600': '#718096',
-				'700': '#4A5568',
-				'800': '#2D3748',
-				'900': '#1A202C'
-			}
+			gray: { ...defaultTheme.colors.gray }
 		}
 	},
 	variants: {},

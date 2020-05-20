@@ -46,7 +46,7 @@ const Masthead = () => {
 								I don't need an<br />inspirational quote.
 							</Text.h2>
 							<Text.h1>
-								I <i>need</i> <u>coffee</u>.
+								I need <u>coffee</u>.
 							</Text.h1>
 						</div>
 

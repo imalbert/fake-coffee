@@ -28,13 +28,13 @@ const IndexPage = ({ data }) => {
 			<SEO />
 			<Section>
 				<div className="py-12 flex flex-col sm:flex-row container mx-auto">
-					<div className="sm:w-1/3 p-2 py-4 space-y-4 text-center sm:text-left flex flex-col justify-center">
-						<Text.l2 className="font-bold">Featured</Text.l2>
+					<div className="sm:w-1/3 p-2 py-4 space-y-3 text-center sm:text-left flex flex-col justify-center">
+						<Text.d1 className="text-gray-600">Featured</Text.d1>
 						<Text.h2 className="font-bold">
-							So much<br />coffee
+							Choose your<br /> coffee
 						</Text.h2>
-						<Text.l1 className="pt-1 font-extrabold uppercase">
-							Full catalog <FontAwesomeIcon icon="chevron-right" />
+						<Text.l1 className="uppercase">
+							Full catalog <FontAwesomeIcon icon="chevron-right" size="xs" className="ml-2" />
 						</Text.l1>
 					</div>
 					<div className="sm:w-2/3">
@@ -52,40 +52,36 @@ const IndexPage = ({ data }) => {
 						fluid={newsSectionImgFluid}
 					/>
 					<div className="absolute inset-0 sm:h-auto flex bg-gray-100 bg-opacity-50">
-						{/* background */}
 						<div className="p-3 sm:py-16 sm:h-auto h-full flex flex-col items-end justify-center container mx-auto">
-							{/* box placement in background */}
 							<div className="w-full sm:w-1/2 sm:h-auto space-y-4 bg-gray-100 text-left">
-								{/* box-content */}
-
-								<div className="px-6 sm:px-12 pt-6 sm:pt-12 flex justify-between">
-									<Text.l2>News</Text.l2>
-									<Text.l2 className="font-bold">18.05.2020</Text.l2>
+								<div className="px-8 sm:px-16 pt-6 sm:pt-12 flex justify-between">
+									<Text.d1 className="text-gray-600">News</Text.d1>
+									<Text.d1 className="font-bold">18.05.2020</Text.d1>
 								</div>
 
-								<div className="flex items-center">
-									<div className="w-6 sm:w-12 flex items-center justify-center">
+								<div className="relative flex items-center px-8 sm:px-16">
+									<div className="absolute left-0 ml-2 sm:ml-5 flex items-center justify-center">
 										<Icon icon="long-arrow-alt-left" />
 									</div>
 									<div className="flex-grow">
 										<Text.h2 className="w-full sm:w-3/4">Happy International Coffee Day!</Text.h2>
 									</div>
-									<div className="w-6 sm:w-12 flex items-center justify-center">
+									<div className="absolute right-0 mr-2 sm:mr-5 flex items-center justify-center">
 										<Icon icon="long-arrow-alt-right" />
 									</div>
 								</div>
 
-								<div className="px-6 sm:px-12 flex flex-col">
-									<Text.p1>
+								<div className="px-8 sm:px-16 flex flex-col">
+									<Text.p1 className="text-gray-600">
 										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
 										eget Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
 										ligula eget dolor. Aenean massa.
 									</Text.p1>
 								</div>
 
-								<div className="px-6 sm:px-12 pb-6 sm:pb-12 flex flex-col">
-									<Text.l1 className="pt-1 font-extrabold uppercase">
-										Show more <FontAwesomeIcon icon="chevron-right" />
+								<div className="px-8 sm:px-16 pb-6 sm:pb-12 flex flex-col">
+									<Text.l1 className="uppercase inline-block">
+										Show more <FontAwesomeIcon icon="chevron-right" size="xs" className="ml-2" />
 									</Text.l1>
 								</div>
 							</div>

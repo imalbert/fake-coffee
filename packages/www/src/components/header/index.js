@@ -5,6 +5,8 @@ import HeaderButton from './header-button';
 import Icon from '../icon/icon';
 import Text from '../text';
 
+const Logo = ({ children }) => <h1 className="font-semibold tracking-wider uppercase">{children || 'FAKECOFFEE'}</h1>;
+
 const Header = () => (
 	<header className="container mx-auto text-white">
 		<div className="flex justify-between">
@@ -18,7 +20,9 @@ const Header = () => (
 				<Text.l2 className="uppercase">Menu</Text.l2>
 			</nav>
 
-			<Text.h3 className="flex-1 text-center uppercase font-bold tracking-tight">FakeCoffee</Text.h3>
+			<div className="flex-1 text-center">
+				<Logo>FAKECOFFEE</Logo>
+			</div>
 
 			<nav className="flex-1 space-x-2 flex items-center justify-end">
 				<HeaderButton>
