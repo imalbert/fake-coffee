@@ -1,11 +1,9 @@
 import React from "react"
 import Img from "gatsby-image"
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 import HomeLayout from "../components/layout/home-layout"
 import Section from "../components/sections/section"
 import SEO from "../components/seo"
-import Masthead1 from "../components/sections/masthead-1"
 import CoffeeShowcase from "../components/sections/coffee-showcase"
 import Icon from "../components/icon/icon"
 
@@ -37,7 +35,7 @@ const IndexPage = ({ data }) => {
               Choose your
               <br /> coffee
             </Text.h2>
-            <Button.Link to="/coffees" icon="chevron-right">
+            <Button.Link to="/coffee" icon="chevron-right">
               Full catalog
             </Button.Link>
           </div>
@@ -60,7 +58,9 @@ const IndexPage = ({ data }) => {
               <div className="w-full sm:w-1/2 sm:h-auto space-y-4 bg-gray-100 text-left">
                 <div className="px-8 sm:px-16 pt-6 sm:pt-12 flex justify-between">
                   <Text.d1 className="text-gray-600">
-                    <a id="home-news">News</a>
+                    <a href="#home-news" id="home-news">
+                      News
+                    </a>
                   </Text.d1>
                   <Text.d1 className="font-bold">18.05.2020</Text.d1>
                 </div>
@@ -120,6 +120,7 @@ const IndexPage = ({ data }) => {
                 <img
                   className="rounded-full w-12"
                   src="https://avatars3.githubusercontent.com/u/12537973?s=460&u=a0d58e799f8b4dc9098f8144156ce34393d54a0f&v=4"
+                  alt="imalbert GitHub avatar"
                 />
                 <Text.h3>Albert M.</Text.h3>
                 <Text.p1 className="text-center">Where's my coffee?</Text.p1>
@@ -170,7 +171,9 @@ const IndexPage = ({ data }) => {
               <div className="h-full flex flex-col sm:flex-row justify-between items-start sm:items-center">
                 <div className="h-full w-full sm:w-64 px-2 bg-gray-100 flex flex-col justify-center items-start pr-8 space-y-4">
                   <Text.l2 className="text-gray-600">
-                    <a id="home-contacts">Contacts</a>
+                    <a href="#home-contacts" id="home-contacts">
+                      Contacts
+                    </a>
                   </Text.l2>
                   <Text.h2 className="pb-2 sm:w-2/3">
                     Let's get acquainted

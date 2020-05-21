@@ -34,7 +34,7 @@ const Header = ({ padding = "6" }) => {
                 <Icon icon="chevron-down" size="sm" className="ml-2" />
               </HeaderButton>
               <HeaderFlyout isOpen={flyoutOpen}>
-                <HeaderLink to="/coffees">
+                <HeaderLink to="/coffee">
                   <div className="p-2 flex items-center space-x-4 rounded-lg">
                     <Icon icon="coffee" size="2x" />
                     <div>
@@ -74,7 +74,7 @@ const Header = ({ padding = "6" }) => {
               <Icon icon="calendar-check" size="lg" className="mr-4" />
               Create a fake plan
             </HeaderLink>
-            <HeaderLink to="/coffees">
+            <HeaderLink to="/coffee">
               <Icon icon="coffee" size="lg" className="mr-4" />
               Coffee
             </HeaderLink>

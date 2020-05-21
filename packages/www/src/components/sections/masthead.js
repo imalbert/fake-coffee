@@ -4,7 +4,6 @@ import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
-import Header from "../header"
 import Text from "../text"
 import Hyperlink from "../hyperlink"
 import Button from "../button"
@@ -23,12 +22,10 @@ const Masthead = () => {
   `)
 
   return (
-    <div className="p-4 flex flex-col container mx-auto">
-      <Header />
-
-      <div className="py-16 sm:px-4 flex flex-grow">
+    <div className="flex flex-col container mx-auto">
+      <div className="flex flex-grow">
         <div className="grid grid-cols-1 sm:grid-cols-2 w-full">
-          <div className="flex flex-col justify-center text-center sm:text-right">
+          <div className="py-8 sm:py-16 sm:px-4 flex flex-col justify-center text-center sm:text-right">
             <div className="py-2 space-x-4 flex justify-center sm:justify-end text-white">
               <Hyperlink href="https://github.com/imalbert" target="_blank">
                 <FontAwesomeIcon icon={faGithub} />
@@ -53,7 +50,7 @@ const Masthead = () => {
             </div>
 
             <div className="pb-4 pt-6 flex justify-center sm:justify-end items-center">
-              <Button.Outline to="/coffees" icon="chevron-right" inverse>
+              <Button.Outline to="/coffee" icon="chevron-right" inverse>
                 Get Coffee
               </Button.Outline>
             </div>

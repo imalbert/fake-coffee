@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import CoffeeCard from "../components/card/coffee-card"
-import PageLayout from "../components/layout/subpage-layout"
+import PageLayout from "../components/layout/page-layout"
 import StepLevel from "../components/step/step-level"
 import StepFooter from "../components/step/step-footer"
 import Text from "../components/text"

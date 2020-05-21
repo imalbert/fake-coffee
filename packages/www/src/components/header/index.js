@@ -1,18 +1,23 @@
 import React from "react"
+import { Link as GatsbyLink } from "gatsby"
+import className from "classnames"
 
-import HeaderLink from "./header-link"
 import HeaderButton from "./header-button"
 import Icon from "../icon/icon"
 import Text from "../text"
 
 export const Logo = ({ children }) => (
-  <h1 className="font-semibold tracking-wider uppercase">
-    {children || "FAKECOFFEE"}
+  <h1 className="font-extrabold tracking-wider uppercase">
+    <GatsbyLink to="/">{children || "FAKECOFFEE"}</GatsbyLink>
   </h1>
 )
 
-const Header = () => (
-  <header className="container mx-auto text-white">
+const Header = ({ inverse }) => (
+  <header
+    className={className("p-2 sm:py-10 container mx-auto", {
+      "text-white": inverse,
+    })}
+  >
     <div className="flex justify-between">
       <nav className="flex-1 space-x-2 flex items-center">
         <HeaderButton
@@ -24,11 +29,11 @@ const Header = () => (
         <Text.l2 className="uppercase">Menu</Text.l2>
       </nav>
 
-      <div className="flex-1 text-center">
+      <div className="hidden sm:block flex-1 text-center">
         <Logo>FAKECOFFEE</Logo>
       </div>
 
-      <nav className="flex-1 space-x-2 flex items-center justify-end">
+      <nav className="flex-1 space-x-4 flex items-center justify-end">
         <HeaderButton>
           <Icon icon="search" />
         </HeaderButton>
