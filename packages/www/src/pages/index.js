@@ -57,7 +57,9 @@ const IndexPage = ({ data }) => {
             <div className="p-3 sm:py-16 sm:h-auto h-full flex flex-col items-end justify-center container mx-auto">
               <div className="w-full sm:w-1/2 sm:h-auto space-y-4 bg-gray-100 text-left">
                 <div className="px-8 sm:px-16 pt-6 sm:pt-12 flex justify-between">
-                  <Text.d1 className="text-gray-600">News</Text.d1>
+                  <Text.d1 className="text-gray-600">
+                    <a id="home-news">News</a>
+                  </Text.d1>
                   <Text.d1 className="font-bold">18.05.2020</Text.d1>
                 </div>
 
@@ -156,16 +158,18 @@ const IndexPage = ({ data }) => {
       <Section>
         <div className="relative my-12">
           <Img
-            className="absolute inset-0 hidden sm:block w-full sm:w-3/4 hidden sm:block"
+            className="absolute inset-0 hidden sm:block w-full sm:w-3/4 hidden sm:block border-t-2 border-b-2 border-gray-100"
             style={{ height: "28rem", margin: "0 0 0 auto" }}
             alt={"Coffee beans on background"}
             fluid={contactSectionImgFluid}
           />
-          <div className="sm:absolute inset-0">
+          <div className="sm:absolute inset-0 bg-gray-100 bg-opacity-50">
             <div className="h-full container mx-auto flex flex-col">
               <div className="h-full flex flex-col sm:flex-row justify-between items-start sm:items-center">
-                <div className="h-full w-full sm:w-56 bg-gray-100 flex flex-col justify-center items-start pr-8 space-y-4">
-                  <Text.l2 className="text-gray-600">Contacts</Text.l2>
+                <div className="h-full w-full sm:w-64 px-2 bg-gray-100 flex flex-col justify-center items-start pr-8 space-y-4">
+                  <Text.l2 className="text-gray-600">
+                    <a id="home-contacts">Contacts</a>
+                  </Text.l2>
                   <Text.h2 className="pb-2 sm:w-2/3">
                     Let's get acquainted
                   </Text.h2>
@@ -205,22 +209,24 @@ const IndexPage = ({ data }) => {
                   </dl>
                 </div>
 
-                <div className="py-6 sm:py-12 px-0 sm:px-6 space-y-3 bg-gray-100 w-full sm:w-auto flex flex-col justify-center">
-                  <Text.h3 className="font-bold uppercase">Contact us</Text.h3>
+                <div className="pb-0 pt-12 sm:py-12 px-8 sm:px-6 space-y-3 bg-gray-100 w-full sm:w-auto flex flex-col justify-center">
+                  <Text.h3 className="font-extrabold uppercase">
+                    Contact us
+                  </Text.h3>
                   <input
                     id="contactus-name"
-                    className="appearance-none sm:w-auto bg-gray-100 border-b-2 p-2 text-sm font-bold"
+                    className="appearance-none sm:w-auto bg-gray-100 border-b-2 p-2 text-xs font-semibold"
                     placeholder="Name"
                   />
                   <input
                     id="contactus-phone"
-                    className="appearance-none sm:w-auto bg-gray-100 border-b-2 p-2 text-sm font-bold"
+                    className="appearance-none sm:w-auto bg-gray-100 border-b-2 p-2 text-xs font-bold"
                     placeholder="Phone"
                   />
                   <textarea
                     id="contactus-message"
                     rows="3"
-                    className="form-textarea appearance-none sm:w-auto bg-gray-100 border-b-2 p-2 text-sm font-bold"
+                    className="form-textarea appearance-none sm:w-auto bg-gray-100 border-b-2 p-2 text-xs font-bold"
                     placeholder="Message"
                   />
                   <Button.Outline icon="chevron-right">
@@ -232,72 +238,8 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
       </Section>
-      {/*
-      <Section>
-        <div className="relative py-12">
-          <Img
-            className="absolute inset-0 w-full sm:w-2/3 sm:mt-0 sm:ml-0 sm:mb-0 sm:mr-auto hidden sm:block"
-            style={{ margin: "0 0 0 auto" }}
-            alt={"Coffee beans on background"}
-            fluid={contactSectionImgFluid}
-          />
-          <div className="sm:absolute inset-0">
-            <div className="flex flex-col sm:flex-row justify-between items-center container mx-auto h-full">
-              <div className="pl-2 py-4 sm:pr-8 space-y-4 bg-gray-100 sm:text-left flex flex-col">
-                <Text.l2 className="text-gray-600">Contacts</Text.l2>
-                <Text.h2 className="pb-2 sm:w-2/3">
-                  Let's get acquainted
-                </Text.h2>
-                <div className="leading-snug leading-loose">
-                  <Text.l1 className="font-bold">LinkedIn</Text.l1>
-                  <Text.l2 className="text-gray-800 font-semibold">
-                    linkedin.com
-                  </Text.l2>
-                </div>
-                <div className="leading-snug leading-loose">
-                  <Text.l1 className="font-bold">Github</Text.l1>
-                  <Text.l2 className="text-gray-800 font-bold">
-                    github.com
-                  </Text.l2>
-                </div>
-                <div className="leading-snug leading-loose">
-                  <Text.l1 className="font-bold">Email</Text.l1>
-                  <Text.l2 className="text-gray-800 font-bold">
-                    email.com
-                  </Text.l2>
-                </div>
-              </div>
 
-              <div className="py-4 sm:py-12 px-2 sm:px-8 space-y-4 sm:text-left w-full sm:w-auto flex flex-col bg-gray-100">
-                <Text.h3 className="font-bold uppercase">Contact us</Text.h3>
-                <input
-                  id="contactus-name"
-                  className="appearance-none bg-gray-100 border-b-2 p-2 text-sm font-bold"
-                  placeholder="Name"
-                />
-                <input
-                  id="contactus-phone"
-                  className="appearance-none bg-gray-100 border-b-2 p-2 text-sm font-bold"
-                  placeholder="Phone"
-                />
-                <textarea
-                  id="contactus-message"
-                  rows="3"
-                  className="form-textarea appearance-none bg-gray-100 border-b-2 p-2 text-sm font-bold"
-                  placeholder="Message"
-                />
-                <div className="pt-2">
-                  <Button.Outline icon="chevron-right">
-                    Send Message
-                  </Button.Outline>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Section> */}
-
-      <Masthead1 />
+      {/* <Masthead1 /> */}
     </HomeLayout>
   )
 }

@@ -27,14 +27,25 @@ const Outline = ({ children, icon, round, inverse }) => {
   )
 }
 
-const Link = ({ children, icon }) => (
-  <button type="button" className="inline-flex items-center">
-    <Text.l1 className="inline-block w-auto text-left uppercase leading-none">
-      {children}
-    </Text.l1>
-    {icon && <Icon icon={icon} size="xs" className="ml-2" />}
-  </button>
-)
+const Link = ({ children, icon, full, xs }) => {
+  const btnClass = classNames("inline-flex items-center", {
+    "justify-between p-2": full,
+  })
+  return (
+    <button type="button" className={btnClass}>
+      {xs ? (
+        <Text.l2 className="inline-block w-auto text-left uppercase leading-none">
+          {children}
+        </Text.l2>
+      ) : (
+        <Text.l1 className="inline-block w-auto text-left uppercase leading-none">
+          {children}
+        </Text.l1>
+      )}
+      {icon && <Icon icon={icon} size="xs" className="ml-2" />}
+    </button>
+  )
+}
 
 export default {
   Outline,

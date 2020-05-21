@@ -1,31 +1,45 @@
 import React from "react"
+import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 import Hyperlink from "./hyperlink"
 import Button from "./button"
 import Text from "./text"
+import { Logo } from "./header"
 
 const Footer = () => (
-  <footer className="container mx-auto">
-    <div className="py-4 sm:py-12 grid grid-cols-1 sm:grid-cols-3">
-      <div className="grid grid-cols-2">
-        <div className="flex flex-col justify-center items-center sm:items-start">
-          <Text.l2 className="font-bold uppercase">News</Text.l2>
-          <Text.l2 className="font-bold uppercase">Catalog</Text.l2>
-          <Text.l2 className="font-bold uppercase">Contacts</Text.l2>
+  <footer className="container mx-auto border-t-2 border-gray-300">
+    <div className="p-2 py-4 sm:py-12 grid grid-cols-1 sm:grid-cols-3 sm:inline-flex w-full">
+      <div className="grid grid-cols-2 sm:w-1/4">
+        <div className="flex flex-col justify-center items-center sm:items-start space-y-2">
+          <Text.l2 className="uppercase">
+            <Link to="#home-news">News</Link>
+          </Text.l2>
+          <Text.l2 className="uppercase">
+            <Link to="#home-contacts">Coffee</Link>
+          </Text.l2>
+          <Text.l2 className="uppercase">
+            <Link to="/coffees">Catalogs</Link>
+          </Text.l2>
         </div>
-        <div className="flex flex-col justify-center items-center sm:items-start">
-          <Text.l2 className="font-bold uppercase">About us</Text.l2>
-          <Text.l2 className="font-bold uppercase">Delivery</Text.l2>
-          <Text.l2 className="font-bold uppercase">FAQ</Text.l2>
+        <div className="flex flex-col justify-center items-center sm:items-start space-y-2">
+          <Text.l2 className="uppercase">
+            <Link to="/">About us</Link>
+          </Text.l2>
+          <Text.l2 className="uppercase">
+            <Link to="/">Delivery</Link>
+          </Text.l2>
+          <Text.l2 className="uppercase">
+            <Link to="/">FAQ</Link>
+          </Text.l2>
         </div>
       </div>
 
-      <div className="py-4 sm:py-0 sm:space-y-1 flex flex-col justify-center">
-        <Text.h3 className="text-center uppercase font-bold tracking-tight">
-          FakeCoffee
-        </Text.h3>
+      <div className="py-4 sm:py-0 sm:space-y-1 flex flex-col justify-center sm:w-1/2">
+        <div className="text-center">
+          <Logo>FAKECOFFEE</Logo>
+        </div>
         <div className="space-x-8 text-center">
           <Hyperlink href="https://github.com/imalbert" target="_blank">
             <FontAwesomeIcon icon={faGithub} />
@@ -39,14 +53,16 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="p-4 sm:p-0 flex flex-col">
+      <div className="p-4 sm:p-0 space-y-2 flex flex-col sm:w-1/4">
         <input
           id="subscribe-email"
           className="appearance-none bg-gray-100 border-b-2 p-2 text-xs font-bold"
           placeholder="ENTER EMAIL"
         />
 
-        <Button.Outline icon="chevron-right">Subscribe</Button.Outline>
+        <Button.Link icon="chevron-right" full xs>
+          Subscribe
+        </Button.Link>
       </div>
     </div>
   </footer>
