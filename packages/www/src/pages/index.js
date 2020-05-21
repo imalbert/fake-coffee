@@ -1,6 +1,5 @@
 import React from "react"
 import Img from "gatsby-image"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 
 import HomeLayout from "../components/layout/home-layout"
@@ -19,9 +18,13 @@ const IndexPage = ({ data }) => {
     ...node.frontmatter,
     slug: node.fields.slug,
   }))
-  const planSectionImgFluid = data.allImageSharp.edges[0].node.fluid
-  const newsSectionImgFluid = data.allImageSharp.edges[1].node.fluid
-  const contactSectionImgFluid = data.allImageSharp.edges[2].node.fluid
+  const images = data.allImageSharp.edges.reduce((obj, e) => {
+    obj[e.node.parent.name] = e.node
+    return obj
+  }, {})
+  const planSectionImgFluid = images["coffee-desktop"].fluid
+  const newsSectionImgFluid = images["coffee-with-sunrise"].fluid
+  const contactSectionImgFluid = images["contact-us"].fluid
 
   return (
     <HomeLayout>
@@ -334,6 +337,11 @@ export const query = graphql`
         node {
           fluid(srcSetBreakpoints: [400, 600, 800, 1200, 1600]) {
             ...GatsbyImageSharpFluid
+          }
+          parent {
+            ... on File {
+              name
+            }
           }
         }
       }
