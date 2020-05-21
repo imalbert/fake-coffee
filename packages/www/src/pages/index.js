@@ -31,7 +31,7 @@ const IndexPage = ({ data }) => {
       <SEO />
       <Section>
         <div className="py-12 flex flex-col sm:flex-row container mx-auto">
-          <div className="sm:w-1/3 p-2 py-4 space-y-3 text-center sm:text-left flex flex-col justify-center sm:items-start">
+          <div className="sm:w-1/3 p-2 py-4 space-y-3 text-center sm:text-left flex flex-col justify-center items-center sm:items-start">
             <Text.d1 className="text-gray-600">Featured</Text.d1>
             <Text.h2 className="font-bold">
               Choose your
@@ -312,7 +312,7 @@ export const query = graphql`
             price
             img {
               childImageSharp {
-                fluid(maxWidth: 400) {
+                fluid(maxWidth: 800) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -335,7 +335,7 @@ export const query = graphql`
     ) {
       edges {
         node {
-          fluid(srcSetBreakpoints: [400, 600, 800, 1200, 1600]) {
+          fluid(srcSetBreakpoints: [800, 1200, 1600]) {
             ...GatsbyImageSharpFluid
           }
           parent {
