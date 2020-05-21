@@ -1,0 +1,1 @@
+Website design inspiration by [Alexey Maslov](https://www.behance.net/gallery/44582565/Techinque). Checkout his [behance page](https://www.behance.net/blackbread)!
