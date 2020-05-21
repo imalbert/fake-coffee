@@ -1,10 +1,11 @@
 import React from "react"
+import { Link as GatsbyLink } from "gatsby"
 import classNames from "classnames"
 
 import Text from "../text"
 import Icon from "../icon/icon"
 
-const Outline = ({ children, icon, round, inverse }) => {
+const Outline = ({ children, to = "/", icon, round, inverse }) => {
   const btnClass = classNames(
     "inline-flex border items-center",
     { "rounded-full w-6 h-6 flex justify-center": round },
@@ -20,19 +21,19 @@ const Outline = ({ children, icon, round, inverse }) => {
   const iconClass = classNames({ "text-white": inverse }, { "mx-3": !round })
 
   return (
-    <button type="button" className={btnClass}>
+    <GatsbyLink to={to} type="button" className={btnClass}>
       {children && <Text.l1 className={textClass}>{children}</Text.l1>}
       {icon && <Icon icon={icon} size="xs" className={`${iconClass}`} />}
-    </button>
+    </GatsbyLink>
   )
 }
 
-const Link = ({ children, icon, full, xs }) => {
+const Link = ({ children, to = "/", icon, full, xs }) => {
   const btnClass = classNames("inline-flex items-center", {
     "justify-between p-2": full,
   })
   return (
-    <button type="button" className={btnClass}>
+    <GatsbyLink to={to} type="button" className={btnClass}>
       {xs ? (
         <Text.l2 className="inline-block w-auto text-left uppercase leading-none">
           {children}
@@ -43,7 +44,7 @@ const Link = ({ children, icon, full, xs }) => {
         </Text.l1>
       )}
       {icon && <Icon icon={icon} size="xs" className="ml-2" />}
-    </button>
+    </GatsbyLink>
   )
 }
 

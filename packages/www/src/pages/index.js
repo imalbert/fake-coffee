@@ -37,7 +37,9 @@ const IndexPage = ({ data }) => {
               Choose your
               <br /> coffee
             </Text.h2>
-            <Button.Link icon="chevron-right">Full catalog</Button.Link>
+            <Button.Link to="/coffees" icon="chevron-right">
+              Full catalog
+            </Button.Link>
           </div>
           <div className="sm:w-2/3">
             <CoffeeShowcase coffees={coffees} />

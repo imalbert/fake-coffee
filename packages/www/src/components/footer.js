@@ -17,10 +17,10 @@ const Footer = () => (
             <Link to="#home-news">News</Link>
           </Text.l2>
           <Text.l2 className="uppercase">
-            <Link to="#home-contacts">Coffee</Link>
+            <Link to="#home-contacts">Contacts</Link>
           </Text.l2>
           <Text.l2 className="uppercase">
-            <Link to="/coffees">Catalogs</Link>
+            <Link to="/coffees">Coffee</Link>
           </Text.l2>
         </div>
         <div className="flex flex-col justify-center items-center sm:items-start space-y-2">

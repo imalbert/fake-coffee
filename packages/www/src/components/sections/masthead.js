@@ -53,7 +53,7 @@ const Masthead = () => {
             </div>
 
             <div className="pb-4 pt-6 flex justify-center sm:justify-end items-center">
-              <Button.Outline icon="chevron-right" inverse>
+              <Button.Outline to="/coffees" icon="chevron-right" inverse>
                 Get Coffee
               </Button.Outline>
             </div>
