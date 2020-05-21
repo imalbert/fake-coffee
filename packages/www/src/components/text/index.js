@@ -21,9 +21,7 @@ export default {
     </P>
   ),
   h3: ({ children, className = "" }) => (
-    <P cls={`text-1xl sm:text-2xl font-bold leading-none ${className}`}>
-      {children}
-    </P>
+    <P cls={`text-1xl font-extrabold leading-none ${className}`}>{children}</P>
   ),
   d1: ({ children, className = "" }) => (
     <P cls={`${className} text-xs font-bold`}>{children}</P>
@@ -38,12 +36,12 @@ export default {
     <P cls={`text-sm font-bold tracking-normal ${className}`}>{children}</P>
   ),
   l2: ({ children, className = "" }) => (
-    <P cls={`text-xs font-bold tracking-normal ${className}`}>{children}</P>
+    <P cls={`text-xxs font-bold tracking-normal ${className}`}>{children}</P>
   ),
   p1: ({ children, className = "" }) => (
     <P cls={`text-sm ${className}`}>{children}</P>
   ),
   p2: ({ children, className = "" }) => (
-    <P cls={`text-xs ${className}`}>{children}</P>
+    <P cls={`text-xxs ${className}`}>{children}</P>
   ),
 }
