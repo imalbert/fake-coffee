@@ -28,7 +28,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <HomeLayout>
-      <SEO />
+      <SEO title="Home" />
       <Section>
         <div className="py-12 flex flex-col sm:flex-row container mx-auto">
           <div className="sm:w-1/3 p-2 py-4 space-y-3 text-center sm:text-left flex flex-col justify-center items-center sm:items-start">
