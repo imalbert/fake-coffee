@@ -83,8 +83,8 @@ const Coffees = () => {
       <SEO title="Coffee" description="Grab life by the beans" />
       <Section>
         <div className="container mx-auto">
-          <div className="lg:flex">
-            <aside className="w-1/4 space-y-6">
+          <div className="lg:flex flex px-2">
+            <aside className="hidden sm:block w-1/4 space-y-6">
               <Text.h2 className="font-bold">
                 Our
                 <br />
@@ -161,7 +161,7 @@ const Coffees = () => {
               </ul>
             </aside>
 
-            <main className="w-3/4 space-y-3">
+            <main className="w-full flex flex-col sm:w-3/4 space-y-3">
               <div className="flex justify-between">
                 <div className="space-x-3">
                   <Text.l2 className="inline uppercase">Sort by:</Text.l2>
@@ -175,36 +175,46 @@ const Coffees = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                {coffees.map(coffee => (
-                  <div className="flex flex-col space-y-3">
-                    <Img
-                      className="w-full h-full mx-auto bg-gray-200"
-                      imgStyle={{ objectFit: "contain" }}
-                      alt={coffee.title}
-                      fluid={coffee.img.childImageSharp.fluid}
-                    />
-                    <div className="space-y-1">
-                      <Text.l2>{coffee.title}</Text.l2>
-                      <Text.p2>{coffee.excerpt}</Text.p2>
-                      <Text.l2>{coffee.price}</Text.l2>
+              <div className="flex-grow">
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  {coffees.map(coffee => (
+                    <div className="flex flex-col space-y-3">
+                      <Img
+                        className="w-full h-full mx-auto bg-gray-200"
+                        imgStyle={{ objectFit: "contain" }}
+                        alt={coffee.title}
+                        fluid={coffee.img.childImageSharp.fluid}
+                      />
+                      <div className="space-y-1">
+                        <Text.l2>{coffee.title}</Text.l2>
+                        <Text.p2>{coffee.excerpt}</Text.p2>
+                        <Text.l2>{coffee.price}</Text.l2>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
+
+              <footer className="sm:hidden flex justify-center items-center">
+                <Text.l1>Load more</Text.l1>
+              </footer>
+              <footer className="hidden sm:flex justify-center items-center space-x-6">
+                <Icon icon="long-arrow-alt-left" size="xs" />
+                <div className="flex justify-center items-center space-x-3">
+                  <Text.p2 className="font-bold">1</Text.p2>
+                  <Text.p2>2</Text.p2>
+                  <Text.p2>3</Text.p2>
+                  <Text.p2>4</Text.p2>
+                  <Text.p2>...</Text.p2>
+                  <Text.p2>98</Text.p2>
+                  <Text.p2>99</Text.p2>
+                </div>
+                <Icon icon="long-arrow-alt-right" size="xs" />
+              </footer>
             </main>
           </div>
         </div>
       </Section>
-      {/* <section className="container mx-auto">
-        <div className="grid gap-8 sm:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-          {coffees.map(coffee => (
-            <CoffeeCard key={coffee.id} {...coffee} />
-          ))}
-        </div>
-      </section> */}
-
-      {/* {"filters"} */}
     </PageLayout>
   )
 }

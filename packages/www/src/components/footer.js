@@ -10,7 +10,7 @@ import { Logo } from "./header"
 
 const Footer = () => (
   <footer className="container mx-auto border-t-2 border-gray-300">
-    <div className="p-2 py-4 sm:py-12 grid grid-cols-1 sm:grid-cols-3 sm:inline-flex w-full">
+    <div className="p-2 py-4 sm:py-8 grid grid-cols-1 sm:grid-cols-3 sm:inline-flex w-full">
       <div className="grid grid-cols-2 sm:w-1/4">
         <div className="flex flex-col justify-center items-center sm:items-start space-y-2">
           <Text.l2 className="uppercase">

@@ -10,7 +10,6 @@ const PageLayout = ({ children }) => {
     <Layout>
       <Header />
       <main className="flex-grow flex flex-col">{children}</main>
-      <Footer />
     </Layout>
   )
 }
