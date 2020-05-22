@@ -1,11 +1,14 @@
 import React from "react"
+import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 
 import PageLayout from "../components/layout/page-layout"
 import Section from "../components/sections/section"
 import SEO from "../components/seo"
 import CoffeeCard from "../components/card/coffee-card"
+
 import Text from "../components/text"
+import Icon from "../components/icon/icon"
 
 const Slider = ({ min, max }) => {
   return (
@@ -52,7 +55,15 @@ const Coffees = () => {
               grown
               price
               weight
+              img {
+                childImageSharp {
+                  fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
+            excerpt(pruneLength: 75)
             fields {
               slug
             }
@@ -63,6 +74,7 @@ const Coffees = () => {
   `)
   const coffees = data.allMarkdownRemark.edges.map(({ node }) => ({
     ...node.frontmatter,
+    excerpt: node.excerpt,
     slug: node.fields.slug,
   }))
 
@@ -149,7 +161,38 @@ const Coffees = () => {
               </ul>
             </aside>
 
-            <main className="w-3/4 bg-gray-200">main</main>
+            <main className="w-3/4 space-y-3">
+              <div className="flex justify-between">
+                <div className="space-x-3">
+                  <Text.l2 className="inline uppercase">Sort by:</Text.l2>
+                  <Text.l2 className="inline uppercase text-gray-600">
+                    Price <Icon icon="angle-down" size="sm" />
+                  </Text.l2>
+                </div>
+                <div className="space-x-1">
+                  <Icon icon="th-list" size="sm" className="text-gray-600" />
+                  <Icon icon="th" size="sm" />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {coffees.map(coffee => (
+                  <div className="flex flex-col space-y-3">
+                    <Img
+                      className="w-full h-full mx-auto bg-gray-200"
+                      imgStyle={{ objectFit: "contain" }}
+                      alt={coffee.title}
+                      fluid={coffee.img.childImageSharp.fluid}
+                    />
+                    <div className="space-y-1">
+                      <Text.l2>{coffee.title}</Text.l2>
+                      <Text.p2>{coffee.excerpt}</Text.p2>
+                      <Text.l2>{coffee.price}</Text.l2>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </main>
           </div>
         </div>
       </Section>
