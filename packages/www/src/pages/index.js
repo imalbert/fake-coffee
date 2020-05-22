@@ -56,7 +56,7 @@ const IndexPage = ({ data }) => {
           <div className="absolute inset-0 sm:h-auto flex bg-gray-100 bg-opacity-50">
             <div className="p-3 sm:py-16 sm:h-auto h-full flex flex-col items-end justify-center container mx-auto">
               <div className="w-full sm:w-1/2 sm:h-auto space-y-4 bg-gray-100 text-left">
-                <div className="px-8 sm:px-16 pt-6 sm:pt-12 flex justify-between">
+                <div className="px-2 sm:px-16 pt-6 sm:pt-12 flex justify-between">
                   <Text.d1 className="text-gray-600">
                     <a href="#home-news" id="home-news">
                       News

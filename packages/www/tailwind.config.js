@@ -25,6 +25,8 @@ module.exports = {
         dark: "#c48100",
       },
       gray: { ...defaultTheme.colors.gray },
+      red: { ...defaultTheme.colors.red },
+      green: { ...defaultTheme.colors.green },
     },
   },
   variants: {},

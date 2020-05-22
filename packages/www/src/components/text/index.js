@@ -21,22 +21,21 @@ export default {
     </P>
   ),
   h3: ({ children, className = "" }) => (
-    <P cls={`text-1xl font-extrabold leading-none ${className}`}>{children}</P>
-  ),
-  d1: ({ children, className = "" }) => (
-    <P cls={`${className} text-xs font-bold`}>{children}</P>
+    <P cls={`text-1xl sm:text-2xl font-extrabold leading-none ${className}`}>
+      {children}
+    </P>
   ),
   dt: ({ children, className = "" }) => (
     <P cls={`${className} text-xs font-extrabold`}>{children}</P>
   ),
   dd: ({ children, className = "" }) => (
-    <P cls={`${className} text-gray-600 text-xs font-bold`}>{children}</P>
+    <P cls={`${className} text-gray-600 text-xs font-extrabold`}>{children}</P>
   ),
   l1: ({ children, className = "" }) => (
-    <P cls={`text-sm font-bold tracking-normal ${className}`}>{children}</P>
+    <P cls={`text-sm font-extrabold ${className}`}>{children}</P>
   ),
   l2: ({ children, className = "" }) => (
-    <P cls={`text-xxs font-bold tracking-normal ${className}`}>{children}</P>
+    <P cls={`text-xs font-extrabold ${className}`}>{children}</P>
   ),
   p1: ({ children, className = "" }) => (
     <P cls={`text-sm ${className}`}>{children}</P>
