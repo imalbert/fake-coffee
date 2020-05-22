@@ -30,7 +30,7 @@ const IndexPage = ({ data }) => {
       <Section>
         <div className="py-12 flex flex-col sm:flex-row container mx-auto">
           <div className="sm:w-1/3 p-2 py-4 space-y-3 text-center sm:text-left flex flex-col justify-center items-center sm:items-start">
-            <Text.d1 className="text-gray-600">Featured</Text.d1>
+            <Text.label className="text-gray-600">Featured</Text.label>
             <Text.h2 className="font-bold">
               Choose your
               <br /> coffee
@@ -57,12 +57,12 @@ const IndexPage = ({ data }) => {
             <div className="p-3 sm:py-16 sm:h-auto h-full flex flex-col items-end justify-center container mx-auto">
               <div className="w-full sm:w-1/2 sm:h-auto space-y-4 bg-gray-100 text-left">
                 <div className="px-2 sm:px-16 pt-6 sm:pt-12 flex justify-between">
-                  <Text.d1 className="text-gray-600">
+                  <Text.label className="text-gray-600">
                     <a href="#home-news" id="home-news">
                       News
                     </a>
-                  </Text.d1>
-                  <Text.d1 className="font-bold">18.05.2020</Text.d1>
+                  </Text.label>
+                  <Text.label className="font-bold">18.05.2020</Text.label>
                 </div>
 
                 <div className="relative flex items-center px-8 sm:px-16">
@@ -100,7 +100,7 @@ const IndexPage = ({ data }) => {
       <Section>
         <div className="py-12 flex flex-col sm:flex-row container mx-auto">
           <div className="sm:w-1/3 p-2 py-4 space-y-4 text-center sm:text-left flex flex-col">
-            <Text.d1 className="text-gray-600">Reviews</Text.d1>
+            <Text.label className="text-gray-600">Reviews</Text.label>
             <Text.h2 className="font-bold">
               The best
               <br /> clients
@@ -139,7 +139,7 @@ const IndexPage = ({ data }) => {
           />
           <div className="absolute inset-0">
             <div className="space-y-4 text-center bg-gray-300 bg-opacity-50 h-full flex flex-col items-center justify-center">
-              <Text.d1 className="text-white">Subscribe</Text.d1>
+              <Text.label className="text-white">Subscribe</Text.label>
 
               <div>
                 <Text.h2 className="text-white">

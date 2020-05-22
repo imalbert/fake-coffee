@@ -31,6 +31,9 @@ export default {
   dd: ({ children, className = "" }) => (
     <P cls={`${className} text-gray-600 text-xs font-extrabold`}>{children}</P>
   ),
+  label: ({ children, className = "" }) => (
+    <P cls={`${className} text-gray-600 text-xs font-extrabold`}>{children}</P>
+  ),
   l1: ({ children, className = "" }) => (
     <P cls={`text-sm font-extrabold ${className}`}>{children}</P>
   ),
